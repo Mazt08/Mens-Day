@@ -103,18 +103,21 @@
       transition: filter 0.3s;
     }
     .featured-card:hover img {
-      filter: brightness(0.70);
+      filter: brightness(0.7);
     }
     .featured-overlay {
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       color: #fff;
-      background: rgba(34,34,34,0.22);
-      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      background: rgba(34, 34, 34, 0.22);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
       padding: 24px;
     }
     .featured-title {
@@ -161,67 +164,66 @@
         font-size: 0.9rem;
       }
     }
-      /* Grid for categories: 5 equal columns, max width matches Bootstrap row (1140px) */
-  .category-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    max-width: 1140px;
-    margin-bottom: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .category-grid > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .category-img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 6px;
-    transition: transform 0.2s;
-  }
-  .category-label {
-    margin-top: 8px;
-    text-align: center;
-    font-size: 1rem;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  .category-img:hover {
-    transform: scale(1.03);
-  }
-  .category-label:hover {
-    color: #b86e36;
-    text-decoration: underline;
-  }
-  
-  /* Responsive: stack on mobile */
-  @media (max-width: 991.98px) {
+    /* Grid for categories: 5 equal columns, max width matches Bootstrap row (1140px) */
     .category-grid {
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 720px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+      max-width: 1140px;
+      margin-bottom: 2.5rem;
+      margin-left: auto;
+      margin-right: auto;
     }
-  }
-  @media (max-width: 767.98px) {
-    .category-grid {
-      grid-template-columns: repeat(2, 1fr);
-      max-width: 95vw;
+    .category-grid > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  }
-  @media (max-width: 575.98px) {
-    .category-grid {
-      grid-template-columns: 1fr;
-      max-width: 95vw;
+    .category-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.2s;
     }
-  }
-    
+    .category-label {
+      margin-top: 8px;
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .category-img:hover {
+      transform: scale(1.03);
+    }
+    .category-label:hover {
+      color: #b86e36;
+      text-decoration: underline;
+    }
+
+    /* Responsive: stack on mobile */
+    @media (max-width: 991.98px) {
+      .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 720px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 95vw;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+        max-width: 95vw;
+      }
+    }
   </style>
 
   <body>
@@ -250,7 +252,7 @@
 
         <!-- Right: Icons -->
         <div class="d-flex align-items-center gap-4">
-          <a href="#"
+          <a href="../Search Page/search.html"
             ><img
               src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
               width="24"
@@ -297,78 +299,74 @@
     </div>
 
     <section
-    class="hero"
-    style="background-image: url('landing-background.png')"
-  >
-    <div
-      class="hero-overlay text-white"
-      style="background-color: rgba(0, 0, 0, 0.18)"
+      class="hero"
+      style="background-image: url('landing-background.png')"
     >
-      <h1>Your Cozy Era</h1>
-      <p>Get peak comfy-chic with new winter essentials.</p>
-      <button class="btn btn-shop">Shop Now</button>
-    </div>
-  </section>
-  <div class="container">
-    <div class="shop-category-title">Shop by Category</div>
-    <div class="category-grid mb-5 mx-auto">
-      <div>
-        <img src="Tops.png" class="category-img" alt="Tops">
-        <div class="category-label">TOPS</div>
+      <div
+        class="hero-overlay text-white"
+        style="background-color: rgba(0, 0, 0, 0.18)"
+      >
+        <h1>Your Cozy Era</h1>
+        <p>Get peak comfy-chic with new winter essentials.</p>
+        <button class="btn btn-shop">Shop Now</button>
       </div>
-      <div>
-        <img src="Bottoms.png" class="category-img" alt="Bottoms">
-        <div class="category-label">BOTTOMS</div>
+    </section>
+    <div class="container">
+      <div class="shop-category-title">Shop by Category</div>
+      <div class="category-grid mb-5 mx-auto">
+        <div>
+          <img src="Tops.png" class="category-img" alt="Tops" />
+          <div class="category-label">TOPS</div>
+        </div>
+        <div>
+          <img src="Bottoms.png" class="category-img" alt="Bottoms" />
+          <div class="category-label">BOTTOMS</div>
+        </div>
+        <div>
+          <img src="Outerwear.png" class="category-img" alt="Outerwear" />
+          <div class="category-label">OUTERWEAR</div>
+        </div>
+        <div>
+          <img src="Footwear.png" class="category-img" alt="Footwear" />
+          <div class="category-label">FOOTWEAR</div>
+        </div>
+        <div>
+          <img src="Accessories.png" class="category-img" alt="Accessories" />
+          <div class="category-label">ACCESSORIES</div>
+        </div>
       </div>
-      <div>
-        <img src="Outerwear.png" class="category-img" alt="Outerwear">
-        <div class="category-label">OUTERWEAR</div>
-      </div>
-      <div>
-        <img src="Footwear.png" class="category-img" alt="Footwear">
-        <div class="category-label">FOOTWEAR</div>
-      </div>
-      <div>
-        <img src="Accessories.png" class="category-img" alt="Accessories">
-        <div class="category-label">ACCESSORIES</div>
-      </div>
-    </div>
-  
-    <!-- FEATURED GRID -->
-    <div class="row featured-grid justify-content-center">
-      <div class="col-12 col-md-4 mb-4 mb-md-0">
-        <div class="featured-card" onclick="window.location='#';">
-          <img src="New Arrivals.png" alt="New Arrivals">
-          <div class="featured-overlay">
-            <div class="featured-title">New Arrivals</div>
-            <button class="btn featured-btn">SHOP THE LATEST</button>
+
+      <!-- FEATURED GRID -->
+      <div class="row featured-grid justify-content-center">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="featured-card" onclick="window.location='#';">
+            <img src="New Arrivals.png" alt="New Arrivals" />
+            <div class="featured-overlay">
+              <div class="featured-title">New Arrivals</div>
+              <button class="btn featured-btn">SHOP THE LATEST</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="featured-card" onclick="window.location='#';">
+            <img src="Best-Sellers.png" alt="Best Sellers" />
+            <div class="featured-overlay">
+              <div class="featured-title">Best-Sellers</div>
+              <button class="btn featured-btn">SHOP YOUR FAVORITES</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="featured-card" onclick="window.location='#';">
+            <img src="The Holiday Outfit.png" alt="The Holiday Outfit" />
+            <div class="featured-overlay">
+              <div class="featured-title">The Holiday Outfit</div>
+              <button class="btn featured-btn">SHOP OCCASION</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 mb-4 mb-md-0">
-        <div class="featured-card" onclick="window.location='#';">
-          <img src="Best-Sellers.png" alt="Best Sellers">
-          <div class="featured-overlay">
-            <div class="featured-title">Best-Sellers</div>
-            <button class="btn featured-btn">SHOP YOUR FAVORITES</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="featured-card" onclick="window.location='#';">
-          <img src="The Holiday Outfit.png" alt="The Holiday Outfit">
-          <div class="featured-overlay">
-            <div class="featured-title">The Holiday Outfit</div>
-            <button class="btn featured-btn">SHOP OCCASION</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
