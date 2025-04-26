@@ -116,13 +116,8 @@
 /* Popular Tops */
 .popular-tops img {
   width: 100%;
-  height: 100%;
+  height: 320px;
   object-fit: cover;
-}
-
-.my-5 {
-  margin-top: 1rem !important;
-  margin-bottom: 3rem !important;
 }
 
 .popular-tops a {
