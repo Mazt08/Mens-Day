@@ -359,6 +359,104 @@
     color: black;
   }
 
+  /* Cart icon overlay */
+  .cart-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  }
+
+  .cart-overlay svg {
+    width: 22px;
+    height: 22px;
+    color: #222;
+  }
+
+  /* Fix for hidden inactive items */
+  #menCarousel .carousel-inner {
+    overflow: hidden;
+  }
+
+  #menCarousel .carousel-item {
+    display: none; /* Hide all items by default */
+    transition: transform 0.5s ease;
+  }
+
+  #menCarousel .carousel-item.active {
+    display: block; /* Only the active item will be displayed */
+  }
+
+  #menCarousel .row {
+    margin: 0;
+    width: 100%;
+  }
+
+  #menCarousel .col {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #menCarousel .card {
+    border: none;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    width: 230px;
+    aspect-ratio: 1 / 1;
+    height: 230px;
+    overflow: hidden;
+  }
+
+  #menCarousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  /* Carousel controls positioned outside carousel images */
+  #menCarousel .carousel-control-prev,
+  #menCarousel .carousel-control-next {
+    width: 4vw;
+    min-width: 40px;
+    max-width: 60px;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menCarousel .carousel-control-prev {
+    left: -2vw;
+  }
+
+  #menCarousel .carousel-control-next {
+    right: -2vw;
+  }
+
+  #menCarousel .carousel-control-prev-icon,
+  #menCarousel .carousel-control-next-icon {
+    background-size: 70% 70%;
+  }
+
+  /* Remove outline on control click */
+  #menCarousel .carousel-control-prev:focus,
+  #menCarousel .carousel-control-next:focus {
+    outline: none;
+    box-shadow: none;
+  }
   </style>
 
   <body>
@@ -865,12 +963,182 @@
         <a href="#" style="color: black;">Learn More</a>
       </div>
     </div>
-  
     <div class="divider"></div>
   </div>
-  
-  
 
+
+
+  <div class="container text-center my-5">
+    <h3 class="black-text">Men’s Day On You</h3>
+    <p class="subtitle">
+      Share your latest look with <strong>#EverLaneOnYou</strong> for a chance to be featured.<br>
+      <a href="#" class="btn-link">Add Your Photo</a>
+    </p>
+    
+    <div id="menCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Carousel Item (Page 1) -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-0">
+            <!-- Product Card 1 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features1.png" class="card-img-top" alt="The Waffle Long-Sleeve Crew">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features2.png" class="card-img-top" alt="The Bomber Jacket | Uniform">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features3.png" class="card-img-top" alt="Product 3">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features4.png" class="card-img-top" alt="Product 4">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features5.png" class="card-img-top" alt="Product 5">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Second Carousel Item (Page 2) -->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-0">
+            <!-- Product Card 6 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features6.jpg" class="card-img-top" alt="Product 6">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features7.jpg" class="card-img-top" alt="Product 7">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features8.jpg" class="card-img-top" alt="Product 8">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 9 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features9.jpg" class="card-img-top" alt="Product 9">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 10 -->
+            <div class="col">
+              <div class="card">
+                <img src="Features10.jpg" class="card-img-top" alt="Product 10">
+                <div class="cart-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 7 17h10a1 1 0 0 0 .95-1.3L17 13M7 13L5.4 5M17 13l1.6-8M9 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+      </div>
+    
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#menCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#menCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+  
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <img src="box.png" width="40" alt="Shipping Icon">
+        <h6 class="mt-2 black-text">Complimentary Shipping</h6>
+        <p class="small-text">Enjoy free shipping on Philippines orders over $100.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="recycle.png" width="40" alt="Conscious Icon">
+        <h6 class="mt-2 black-text">Consciously Crafted</h6>
+        <p class="small-text">Designed with you and the planet in mind.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="marker.png" width="40" alt="Location Icon">
+        <h6 class="mt-2 black-text">Come Say Hi</h6>
+        <p class="small-text">938 Aurora Boulevard, Cubao, Quezon City 1109 Quezon City Metro Manila</p>
+      </div>
+    </div>
+  </div>
+  
   
   
 </body>
