@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/loginBackground.png"); /* Correct your path if needed */
+  background: url("../../Pages/images/loginBackground.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
