@@ -8,7 +8,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="Landing Page Men's Day.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <style>
@@ -103,21 +104,18 @@
       transition: filter 0.3s;
     }
     .featured-card:hover img {
-      filter: brightness(0.7);
+      filter: brightness(0.70);
     }
     .featured-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       color: #fff;
-      background: rgba(34, 34, 34, 0.22);
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      background: rgba(34,34,34,0.22);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
       padding: 24px;
     }
     .featured-title {
@@ -164,70 +162,193 @@
         font-size: 0.9rem;
       }
     }
-    /* Grid for categories: 5 equal columns, max width matches Bootstrap row (1140px) */
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-      max-width: 1140px;
-      margin-bottom: 2.5rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .category-grid > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .category-img {
-      width: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-radius: 6px;
-      transition: transform 0.2s;
-    }
-    .category-label {
-      margin-top: 8px;
-      text-align: center;
-      font-size: 1rem;
-      color: #444;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-    .category-img:hover {
-      transform: scale(1.03);
-    }
-    .category-label:hover {
-      color: #b86e36;
-      text-decoration: underline;
-    }
 
-    /* Responsive: stack on mobile */
-    @media (max-width: 991.98px) {
-      .category-grid {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 720px;
-      }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    max-width: 1140px;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .category-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.2s;
+  }
+  .category-label {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .category-img:hover {
+    transform: scale(1.03);
+  }
+  .category-label:hover {
+    color: #b86e36;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 991.98px) {
+    .category-grid {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 720px;
     }
-    @media (max-width: 767.98px) {
-      .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 95vw;
-      }
+  }
+  @media (max-width: 767.98px) {
+    .category-grid {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 95vw;
     }
-    @media (max-width: 575.98px) {
-      .category-grid {
-        grid-template-columns: 1fr;
-        max-width: 95vw;
-      }
+  }
+  @media (max-width: 575.98px) {
+    .category-grid {
+      grid-template-columns: 1fr;
+      max-width: 95vw;
     }
+  }
+    
+.impact-banner {
+  min-height: 210px;
+  background: url('Landing Page Image.png') center center/cover no-repeat;
+  border-radius: 0;
+  margin-top: 0;
+}
+.banner-content {
+  padding: 40px 0;
+}
+.banner-btn {
+  background: #fff;
+  color: #222;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 10px 38px;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.banner-btn:hover {
+  background: #222;
+  color: #fff;
+}
+.card-img-top {
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 0;
+  background: #eee;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 3%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 80% 80%;
+}
+@media (max-width: 991.98px) {
+  .impact-banner {
+    min-height: 120px;
+  }
+  .banner-content h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .card-img-top {
+    aspect-ratio: 7/8;
+  }
+}
+
+.impact-banner {
+    min-height: 210px;
+    background: url('Landing Page Image.png') center center/cover no-repeat;
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .banner-content {
+    padding: 40px 0;
+  }
+  .banner-btn {
+    background: #fff;
+    color: #222;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 10px 38px;
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: background 0.2s, color 0.2s;
+  }
+  .banner-btn:hover {
+    background: #222;
+    color: #fff;
+  }
+  .card-img-top {
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 0;
+    background: #eee;
+  }
+
+
+  .carousel-indicators {
+  position: static;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #bbb; 
+    border: none;
+    opacity: 1;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .carousel-indicators button.active {
+    width: 8px;
+    height: 8px;
+    background-color: #333; 
+    transform: scale(1.2); 
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M11 2L5 8l6 6' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M5 2l6 6-6 6' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  }
+
+
+
+
+
   </style>
 
   <body>
-    <!-- Top black bar -->
     <div class="top-bar d-flex justify-content-center align-items-center">
       <p class="m-0">
         Get early access on launches and offers.
@@ -235,12 +356,10 @@
       </p>
     </div>
 
-    <!-- Main Header -->
     <div class="main-header text-center my-3">
       <h1>Men’s Day</h1>
     </div>
 
-    <!-- Main Header with Left Menu and Right Icons -->
     <nav class="navbar navbar-expand-lg">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Left: Menu -->
@@ -252,7 +371,7 @@
 
         <!-- Right: Icons -->
         <div class="d-flex align-items-center gap-4">
-          <a href="../Search Page/search.html"
+          <a href="#"
             ><img
               src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
               width="24"
@@ -274,7 +393,6 @@
       </div>
     </nav>
 
-    <!-- Second Navbar (Categories) -->
     <div class="category-bar">
       <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -299,75 +417,344 @@
     </div>
 
     <section
-      class="hero"
-      style="background-image: url('landing-background.png')"
+    class="hero"
+    style="background-image: url('landing-background.png')"
+  >
+    <div
+      class="hero-overlay text-white"
+      style="background-color: rgba(0, 0, 0, 0.18)"
     >
-      <div
-        class="hero-overlay text-white"
-        style="background-color: rgba(0, 0, 0, 0.18)"
-      >
-        <h1>Your Cozy Era</h1>
-        <p>Get peak comfy-chic with new winter essentials.</p>
-        <button class="btn btn-shop">Shop Now</button>
+      <h1>Your Cozy Era</h1>
+      <p>Get peak comfy-chic with new winter essentials.</p>
+      <button class="btn btn-shop">Shop Now</button>
+    </div>
+  </section>
+  <div class="container">
+    <div class="shop-category-title">Shop by Category</div>
+    <div class="category-grid mb-5 mx-auto">
+      <div>
+        <img src="Tops.png" class="category-img" alt="Tops">
+        <div class="category-label">TOPS</div>
       </div>
-    </section>
-    <div class="container">
-      <div class="shop-category-title">Shop by Category</div>
-      <div class="category-grid mb-5 mx-auto">
-        <div>
-          <img src="Tops.png" class="category-img" alt="Tops" />
-          <div class="category-label">TOPS</div>
-        </div>
-        <div>
-          <img src="Bottoms.png" class="category-img" alt="Bottoms" />
-          <div class="category-label">BOTTOMS</div>
-        </div>
-        <div>
-          <img src="Outerwear.png" class="category-img" alt="Outerwear" />
-          <div class="category-label">OUTERWEAR</div>
-        </div>
-        <div>
-          <img src="Footwear.png" class="category-img" alt="Footwear" />
-          <div class="category-label">FOOTWEAR</div>
-        </div>
-        <div>
-          <img src="Accessories.png" class="category-img" alt="Accessories" />
-          <div class="category-label">ACCESSORIES</div>
-        </div>
+      <div>
+        <img src="Bottoms.png" class="category-img" alt="Bottoms">
+        <div class="category-label">BOTTOMS</div>
       </div>
-
-      <!-- FEATURED GRID -->
-      <div class="row featured-grid justify-content-center">
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <div class="featured-card" onclick="window.location='#';">
-            <img src="New Arrivals.png" alt="New Arrivals" />
-            <div class="featured-overlay">
-              <div class="featured-title">New Arrivals</div>
-              <button class="btn featured-btn">SHOP THE LATEST</button>
-            </div>
+      <div>
+        <img src="Outerwear.png" class="category-img" alt="Outerwear">
+        <div class="category-label">OUTERWEAR</div>
+      </div>
+      <div>
+        <img src="Footwear.png" class="category-img" alt="Footwear">
+        <div class="category-label">FOOTWEAR</div>
+      </div>
+      <div>
+        <img src="Accessories.png" class="category-img" alt="Accessories">
+        <div class="category-label">ACCESSORIES</div>
+      </div>
+    </div>
+  
+    <!-- FEATURED GRID -->
+    <div class="row featured-grid justify-content-center">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="featured-card" onclick="window.location='#';">
+          <img src="New Arrivals.png" alt="New Arrivals">
+          <div class="featured-overlay">
+            <div class="featured-title">New Arrivals</div>
+            <button class="btn featured-btn">SHOP THE LATEST</button>
           </div>
         </div>
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <div class="featured-card" onclick="window.location='#';">
-            <img src="Best-Sellers.png" alt="Best Sellers" />
-            <div class="featured-overlay">
-              <div class="featured-title">Best-Sellers</div>
-              <button class="btn featured-btn">SHOP YOUR FAVORITES</button>
-            </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="featured-card" onclick="window.location='#';">
+          <img src="Best-Sellers.png" alt="Best Sellers">
+          <div class="featured-overlay">
+            <div class="featured-title">Best-Sellers</div>
+            <button class="btn featured-btn">SHOP YOUR FAVORITES</button>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="featured-card" onclick="window.location='#';">
-            <img src="The Holiday Outfit.png" alt="The Holiday Outfit" />
-            <div class="featured-overlay">
-              <div class="featured-title">The Holiday Outfit</div>
-              <button class="btn featured-btn">SHOP OCCASION</button>
-            </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="featured-card" onclick="window.location='#';">
+          <img src="The Holiday Outfit.png" alt="The Holiday Outfit">
+          <div class="featured-overlay">
+            <div class="featured-title">The Holiday Outfit</div>
+            <button class="btn featured-btn">SHOP OCCASION</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<div class="container-fluid my-5 px-0">
+  <div class="impact-banner d-flex align-items-center justify-content-center">
+    <div class="text-center w-100 banner-content">
+      <h2 class="text-white mb-3">We’re on a Mission To Clean Up the Industry</h2>
+      <div class="text-white mb-4 fs-5">Read about our progress in our latest Impact Report.</div>
+      <a href="#" class="btn banner-btn">LEARN MORE</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container my-5">
+  <div class="text-center mb-2" style="font-size: 2rem; font-weight: 500;">
+    Men’s Day Favorites
+  </div>
+  <div class="text-center mb-4" style="font-size: 1.08rem; color: black;">
+    Beautifully Functional. Purposefully Designed. Consciously Crafted.
+  </div>  
+
+  <div id="favoritesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Carousel Item (Active) -->
+      <div class="carousel-item active">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite1.png" class="card-img-top" alt="The Waffle Long-Sleeve Crew">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Waffle Long-Sleeve Crew</div>
+                <div class="text-muted small mb-1">Bone</div>
+                <div class="fw-semibold">$60</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite2.png" class="card-img-top" alt="The Bomber Jacket | Uniform">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Bomber Jacket | Uniform</div>
+                <div class="text-muted small mb-1">Toasted Coconut</div>
+                <div class="fw-semibold">$148</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite3.png" class="card-img-top" alt="The Slim 4-Way Stretch Organic Jean | Uniform">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Slim 4-Way | Uniform</div>
+                <div class="text-muted small mb-1">Dark Indigo</div>
+                <div class="fw-semibold">$98</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite4.png" class="card-img-top" alt="The Essential Organic Crew">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Essential Organic Crew</div>
+                <div class="text-muted small mb-1">Vintage Black</div>
+                <div class="fw-semibold">$30</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite5.png" class="card-img-top" alt="The Heavyweight">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Heavyweight</div>
+                <div class="text-muted small mb-1">Heathered Brown</div>
+                <div class="fw-semibold">$30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Carousel Item -->
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite6.jpg" class="card-img-top" alt="The Lightweight Hoodie">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Lightweight Hoodie</div>
+                <div class="text-muted small mb-1">Charcoal Grey</div>
+                <div class="fw-semibold">$50</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite7.jpg" class="card-img-top" alt="The Classic T-Shirt">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Classic T-Shirt</div>
+                <div class="text-muted small mb-1">White</div>
+                <div class="fw-semibold">$25</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite8.jpg" class="card-img-top" alt="The Quilted Vest">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Quilted Vest</div>
+                <div class="text-muted small mb-1">Olive Green</div>
+                <div class="fw-semibold">$120</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite9.jpg" class="card-img-top" alt="The Cargo Pants">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Cargo Pants</div>
+                <div class="text-muted small mb-1">Navy Blue</div>
+                <div class="fw-semibold">$70</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite10.jpg" class="card-img-top" alt="The Zip-Up Hoodie">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Zip-Up Hoodie</div>
+                <div class="text-muted small mb-1">Dark Grey</div>
+                <div class="fw-semibold">$55</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add 8 more carousel items as needed -->
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite11.jpg" class="card-img-top" alt="The Casual Shirt">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Casual Shirt</div>
+                <div class="text-muted small mb-1">Sky Blue</div>
+                <div class="fw-semibold">$40</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite12.jpg" class="card-img-top" alt="The Running Shorts">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Running Shorts</div>
+                <div class="text-muted small mb-1">Black</div>
+                <div class="fw-semibold">$28</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite13.jpg" class="card-img-top" alt="The Hiking Boots">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Hiking Boots</div>
+                <div class="text-muted small mb-1">Dark Brown</div>
+                <div class="fw-semibold">$135</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite14.jpg" class="card-img-top" alt="The Denim Jacket">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Denim Jacket</div>
+                <div class="text-muted small mb-1">Light Wash</div>
+                <div class="fw-semibold">$95</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite15.jpg" class="card-img-top" alt="The Wool Sweater">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Wool Sweater</div>
+                <div class="text-muted small mb-1">Forest Green</div>
+                <div class="fw-semibold">$80</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite16.jpg" class="card-img-top" alt="The Everyday Polo">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Everyday Polo</div>
+                <div class="text-muted small mb-1">Slate Blue</div>
+                <div class="fw-semibold">$45</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite17.jpg" class="card-img-top" alt="The Lounge Jogger">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Lounge Jogger</div>
+                <div class="text-muted small mb-1">Heather Grey</div>
+                <div class="fw-semibold">$55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite18.jpg" class="card-img-top" alt="The Linen Shorts">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Linen Shorts</div>
+                <div class="text-muted small mb-1">Khaki</div>
+                <div class="fw-semibold">$38</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite19.jpg" class="card-img-top" alt="The Travel Blazer">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Travel Blazer</div>
+                <div class="text-muted small mb-1">Charcoal</div>
+                <div class="fw-semibold">$160</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="favorite20.jpg" class="card-img-top" alt="The Flannel Shirt">
+              <div class="card-body p-2 pb-0">
+                <div class="fw-semibold small">The Flannel Shirt</div>
+                <div class="text-muted small mb-1">Red Plaid</div>
+                <div class="fw-semibold">$65</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    
+  
+    <!-- Carousel Indicators (Dots) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      <!-- Add more buttons for additional slides -->
+    </div>
+  
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#favoritesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#favoritesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+</body>
 </html>
