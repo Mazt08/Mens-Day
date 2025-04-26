@@ -313,23 +313,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 1px;
   padding: 0;
 }
 
-  .carousel-indicators button {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #bbb; 
-    border: none;
-    opacity: 1;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-
   .carousel-indicators button.active {
-    width: 8px;
-    height: 8px;
     background-color: #333; 
     transform: scale(1.2); 
   }
@@ -342,9 +330,34 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M5 2l6 6-6 6' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");
   }
 
-
-
-
+  .fixed-size-img {
+    width: 100%;  /* Ensures the image scales responsively */
+    max-width: 400px;  /* Set max width */
+    height: 600px;  /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image is cropped to fit within the container */
+  }
+    .divider {
+      border-top: 1px solid #000000;
+      margin: 2rem 0;
+    }
+    .image-card {
+      transition: transform 0.3s;
+    }
+    .image-card:hover {
+      transform: scale(1.02);
+    }
+    .btn-link {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .subtitle {
+      color: #000000;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+      .black-text {
+    color: black;
+  }
 
   </style>
 
@@ -371,7 +384,7 @@
 
         <!-- Right: Icons -->
         <div class="d-flex align-items-center gap-4">
-          <a href="../Search Page/search.html"
+          <a href="#"
             ><img
               src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
               width="24"
@@ -730,21 +743,17 @@
           </div>
         </div>
       </div>
-  
-    </div>
-    
-  
-    <!-- Carousel Indicators (Dots) -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-      <!-- Add more buttons for additional slides -->
     </div>
   
-    <!-- Carousel Controls -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  
     <button class="carousel-control-prev" type="button" data-bs-target="#favoritesCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -755,6 +764,114 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <div class="container my-5">
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+              <h6>People Are Talking</h6>
+              <div class="stars mb-3">★★★★★</div>
+              <p class="fs-5">“Love this shirt! Fits perfectly and the fabric is thick without being stiff.”</p>
+              <p class="mt-4">-- JonSnSF, <a href="#" style="color: black;">The Heavyweight Overshirt</a></p>
+
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="Reviews.png" class="img-fluid rounded fixed-size-img" alt="Overshirt Image">
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+              <h6>What Our Customers Are Saying</h6>
+              <div class="stars mb-3">★★★★★</div>
+              <p class="fs-5">“The fit is amazing, and the material feels so premium. Will definitely buy more!”</p>
+              <p class="mt-4">-- SarahLee, <a href="#" style="color: black;">The Luxe T-Shirt</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="Reviews1.png" class="img-fluid rounded fixed-size-img" alt="Luxe T-Shirt Image">
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+              <h6>Customer Feedback</h6>
+              <div class="stars mb-3">★★★★★</div>
+              <p class="fs-5">“Absolutely in love with my purchase. The quality is top-notch and the design is stylish.”</p>
+              <p class="mt-4">-- MikeR, <a href="#" style="color: black;">The Designer Hoodie</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="Reviews2.png" class="img-fluid rounded fixed-size-img" alt="Designer Hoodie Image">
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+              <h6>What Our Fans Are Saying</h6>
+              <div class="stars mb-3">★★★★★</div>
+              <p class="fs-5">“The fit is just perfect for me. Great value for the money, and it’s comfy!”</p>
+              <p class="mt-4">-- EmilyK, <a href="#" style="color: black;">The Classic Hoodie</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="Reviews3.png" class="img-fluid rounded fixed-size-img" alt="Classic Hoodie Image">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="divider"></div>
+  
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <h5>Our Holiday Gift Picks</h5>
+        <br>
+        <img src="Our Holiday Picks.png" alt="Holiday Gift Picks" class="img-fluid image-card rounded">
+        <p class="subtitle">The best presents for everyone on your list.</p>
+        <a href="#" style="color: black;">Read More</a>
+      </div>
+  
+      <div class="col-md-6 mb-4">
+        <h5>Cleaner Fashion</h5>
+        <br>
+        <img src="Cleaner Fashion.png" alt="Cleaner Fashion" class="img-fluid image-card rounded">
+        <p class="subtitle">See the sustainability efforts behind each of our products.</p>
+        <a href="#" style="color: black;">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="divider"></div>
+  </div>
+  
+  
+
+  
   
 </body>
 </html>
