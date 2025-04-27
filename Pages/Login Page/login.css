@@ -15,14 +15,16 @@ html {
 
 /* Left side */
 .left-side {
-  width: 50%;
-  padding-top: 80px; /* Move logo and menu down */
-  padding-left: 80px; /* Move content slightly right */
+  width: 55%; /* Slightly bigger left side */
+  padding-top: 80px;
+  padding-left: 80px;
+  margin-left: 120px; /* slightly less margin */
+  margin-top: 100px;
 }
 
 .logo {
-  width: 140px;
-  margin-bottom: 40px; /* Space below logo */
+  width: 180px; /* <-- Bigger logo */
+  margin-bottom: 40px;
 }
 
 .menu ul {
@@ -36,9 +38,9 @@ html {
 
 /* Right side */
 .right-side {
-  width: 50%;
-  background: rgba(0, 0, 0, 0.3); /* Semi-dark overlay */
-  backdrop-filter: blur(2px); /* Optional glass effect */
+  width: 45%; /* Adjust because left side became wider */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
   display: flex;
   justify-content: center;
   align-items: center;
