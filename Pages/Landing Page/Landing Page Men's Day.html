@@ -39,8 +39,9 @@
         <a href="../Search Page/search.html"><img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="24"
             alt="Search" /></a>
         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="24" alt="Profile" /></a>
-        <a href="../Cart Page/cart.html"><img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24"
-            alt="Cart" /></a>
+        <a href="#" id="cartButton">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24" alt="Cart" />
+        </a>
       </div>
     </div>
   </nav>
@@ -734,76 +735,187 @@
     </div>
   </div>
 
-  <div class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
-      <h5>Your Cart</h5>
-      <button class="close-cart" id="closeCart">&times;</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-      <!-- Cart items will be added here dynamically -->
-    </div>
-    <div class="cart-footer">
-      <div class="cart-total">
-        <span>Total:</span>
-        <span id="cartTotal">$0.00</span>
-      </div>
-      <button class="btn btn-checkout">Checkout</button>
-    </div>
-  </div>
-  
- <!-- Cart Sidebar -->
+<!-- Product List -->
+<div class="product-list">
+  <!-- Products added here -->
+</div>
+
+<!-- Cart Sidebar -->
 <div class="cart-sidebar" id="cartSidebar">
   <div class="cart-header">
-    <h2>Your Cart</h2>
+    <h5>Your Cart</h5>
     <button class="close-cart" id="closeCart">&times;</button>
   </div>
   <div class="cart-items" id="cartItems">
-    <!-- Cart items will be added here dynamically -->
-    <div class="empty-cart-message">Your cart is empty</div>
+    <!-- Cart items will appear here -->
   </div>
   <div class="cart-footer">
-    <div class="subtotal">
-      <span>Subtotal (<span id="itemCount">0</span> items)</span>
-      <span id="cartSubtotal">$0.00</span>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">$0.00</span>
     </div>
-    <button class="checkout-btn" id="checkoutBtn">CONTINUE TO CHECKOUT</button>
-    <div class="before-you-go">
-      <h3>Before You Go</h3>
-      <div class="suggested-item">
-        <img src="beanie.png" alt="The Good Merino Wool Beanie">
-        <div class="suggested-info">
-          <div class="suggested-title">The Good Merino Wool Beanie</div>
-          <div class="suggested-color">One Size (Chambray Blue)</div>
-          <div class="suggested-price">$35.00</div>
-          <button class="add-suggested-btn">ADD</button>
-        </div>
-      </div>
-      <div class="promo-text">Psst, get it now before it sells out.</div>
+    <button class="btn btn-checkout">Checkout</button>
+  </div>
+</div>
+<!-- Add to Cart Sidebar -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h5>Your Cart</h5>
+    <button class="close-cart" id="closeCart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <!-- Cart items will be added dynamically here -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">$0.00</span>
     </div>
+    <button class="btn btn-checkout" id="checkoutBtn">Checkout</button>
   </div>
 </div>
 
-<!-- Dark overlay -->
-<div class="cart-overlay" id="cartOverlay"></div>
-
-<script src="cart.js"></script>
-
-
-  <!-- Product Modal (hidden by default) -->
-  <div class="product-modal" id="productModal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <img id="modalImage" src="" alt="Product Image">
-      <h3 id="modalTitle"></h3>
-      <p id="modalPrice"></p>
-      <div class="quantity-selector">
-        <button class="quantity-btn minus">-</button>
-        <input type="number" id="quantity" value="1" min="1">
-        <button class="quantity-btn plus">+</button>
-      </div>
-      <button class="btn btn-add-to-cart" id="addToCartBtn">Add to Cart</button>
+<!-- Product Modal (hidden by default) -->
+<div class="product-modal" id="productModal">
+  <div class="modal-content">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="Product Image">
+    <h3 id="modalTitle"></h3>
+    <p id="modalPrice"></p>
+    <div class="quantity-selector">
+      <button class="quantity-btn minus">-</button>
+      <input type="number" id="quantity" value="1" min="1">
+      <button class="quantity-btn plus">+</button>
     </div>
+    <button class="btn btn-add-to-cart" id="addToCartBtn">Add to Cart</button>
   </div>
+</div>
+
+<!-- Product List (visible to the user) -->
+<div class="product-list" id="productList">
+  <!-- Product items will be displayed here -->
+</div>
+
+<script>
+  // Sample product data
+  const products = [
+    { id: 1, name: 'Hoodie', price: 25.00, image: 'hoodies.png', quantity: 1 },
+    { id: 2, name: 'Footwear', price: 15.00, image: 'Footwear.png', quantity: 1 },
+    { id: 3, name: 'Polo Shirt', price: 40.00, image: 'Polo Shirt.png', quantity: 1 },
+    { id: 4, name: 'Shirts', price: 12.00, image: 'Shirts.png', quantity: 1 },
+    { id: 5, name: 'Sweaters', price: 60.00, image: 'Sweaters.png', quantity: 1 }
+  ];
+
+  // Function to render product list
+  function renderProductList() {
+    const productListContainer = document.getElementById('productList');
+    productListContainer.innerHTML = ''; // Clear existing products
+
+    // Add each product to the list
+    products.forEach(product => {
+      const productItem = document.createElement('div');
+      productItem.classList.add('product-item');
+      productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-item-img">
+        <h6 class="product-item-name">${product.name}</h6>
+        <p class="product-item-price">$${product.price.toFixed(2)}</p>
+        <button class="btn btn-view-product" onclick="openProductModal(${product.id})">View Product</button>
+        <button class="btn btn-add-to-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+      `;
+      productListContainer.appendChild(productItem);
+    });
+  }
+
+  // Function to render cart items
+  function renderCart() {
+    const cartItemsContainer = document.getElementById('cartItems');
+    cartItemsContainer.innerHTML = ''; // Clear existing items
+    let total = 0;
+
+    // Add each product in the cart
+    products.forEach(product => {
+      const productTotal = product.price * product.quantity;
+      total += productTotal;
+
+      const productItem = document.createElement('div');
+      productItem.classList.add('cart-item');
+      productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="cart-item-img">
+        <div class="cart-item-details">
+          <h6 class="cart-item-name">${product.name}</h6>
+          <span class="cart-item-price">$${product.price.toFixed(2)}</span>
+          <span class="cart-item-quantity">Quantity: ${product.quantity}</span>
+        </div>
+        <button class="remove-item-btn" onclick="removeItem(${product.id})">Remove</button>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      `;
+      cartItemsContainer.appendChild(productItem);
+    });
+
+    // Update total price
+    document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+  }
+
+  // Function to remove an item from the cart
+  function removeItem(productId) {
+    const productIndex = products.findIndex(p => p.id === productId);
+    if (productIndex !== -1) {
+      products.splice(productIndex, 1); // Remove product
+      renderCart(); // Re-render the cart
+    }
+  }
+
+  // Open product modal and populate it with data
+  function openProductModal(productId) {
+    const product = products.find(p => p.id === productId);
+    document.getElementById('modalImage').src = product.image;
+    document.getElementById('modalTitle').textContent = product.name;
+    document.getElementById('modalPrice').textContent = `$${product.price.toFixed(2)}`;
+    document.getElementById('productModal').style.display = 'block';
+    document.getElementById('quantity').value = product.quantity;
+    document.getElementById('addToCartBtn').onclick = () => addToCart(product.id);
+  }
+
+  // Close the product modal
+  document.getElementById('closeModal').onclick = () => {
+    document.getElementById('productModal').style.display = 'none';
+  };
+
+  // Change quantity inside the modal
+  document.querySelector('.quantity-btn.plus').onclick = () => {
+    const quantityInput = document.getElementById('quantity');
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+  };
+  document.querySelector('.quantity-btn.minus').onclick = () => {
+    const quantityInput = document.getElementById('quantity');
+    if (parseInt(quantityInput.value) > 1) {
+      quantityInput.value = parseInt(quantityInput.value) - 1;
+    }
+  };
+
+  // Add the product to the cart
+  function addToCart(productId) {
+    const quantity = parseInt(document.getElementById('quantity').value);
+    const product = products.find(p => p.id === productId);
+    product.quantity = quantity; // Update quantity
+
+    // Close modal and re-render cart
+    document.getElementById('productModal').style.display = 'none';
+    renderCart();
+  }
+
+  // Checkout button logic
+  document.getElementById('checkoutBtn').onclick = () => {
+    const total = document.getElementById('cartTotal').textContent;
+    alert('Proceeding to checkout with total: ' + total);
+  };
+
+  // Initial render of product list and cart
+  renderProductList();
+  renderCart();
+</script>
+
+
 
   <footer class="footer py-5">
     <div class="container">
