@@ -1,341 +1,306 @@
-/* Top notification bar */
-.top-bar {
-    background-color: black;
-    color: white;
-    height: 40px;
-    font-size: 14px;
-  }
-  
-  .top-bar a {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  /* Main header */
-  .main-header h1 {
-    font-family: "Georgia", serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  /* Main Navbar */
-  .navbar-nav .nav-link {
-    margin: 0 15px;
-    font-weight: 500;
-    color: black;
-  }
-  
-  .navbar-nav .nav-link.active {
-    border-bottom: 2px solid black;
-  }
-  
-  /* Category Links */
-  .category-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .category-links a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .category-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .category-bar {
-    border-top: 2px solid #cccccc; /* Light gray top border */
-    border-bottom: 1px solid #cccccc; /* Light gray bottom border */
-    padding: 10px 0;
-    background-color: white;
-    margin-bottom: 25px;
-  }
-  
-  .category-bar .nav-link {
-    color: black;
-    font-weight: 500;
-    margin: 0 15px;
-    position: relative;
-  }
-  
-  .category-bar .nav-link:hover,
-  .category-bar .nav-link.active {
-    color: purple;
-  }
-  
-  .category-bar .nav-link.active::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: purple;
-  }
-  
-  /* Search Bar */
-  .search-bar .form-control {
-    border-radius: 0;
-    background-color: #f2f2f2;
-    height: 50px;
-  }
-  
-  .input-group-text {
-    cursor: pointer;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #cccccc; /* Light gray bottom line */
-  }
-  
-  .search-bar input {
-    width: 50%;
-    padding: 10px;
-    border: none;
-    background-color: #f8f8f8;
-    font-size: 16px;
-  }
-  
-  .search-bar input:focus {
-    outline: none;
-  }
-  
-  .cancel-text {
-    margin-left: 20px;
-    color: gray;
-    cursor: pointer;
-  }
-  
-  /* Popular Tops */
-  .popular-tops img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  
-  .popular-tops a {
-    text-decoration: underline;
-    color: black;
-    font-size: 0.9rem;
-  }
-  
-  /* Navbar Links */
-  .navbar .nav-link {
-    font-weight: 500;
-    color: black;
-  }
-  
-  .navbar .nav-link.active {
-    border-bottom: 2px solid black;
-  }
-  
-  /* Icon Links */
-  .navbar img {
-    cursor: pointer;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Men's Day</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Shirts page.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
-  /* Header/Page Info */
-.content .header {
-  margin-bottom: 20px;
-}
+  <body>
+    <div class="top-bar d-flex justify-content-center align-items-center">
+      <p class="m-0">
+        Get early access on launches and offers.
+        <a href="#">Sign Up For Texts →</a>
+      </p>
+    </div>
 
-.content .header h6 {
-  color: gray;
-  margin-bottom: 5px;
-}
+    <div class="main-header text-center my-3">
+      <h1>Men’s Day</h1>
+    </div>
 
-.content .header h2 {
-  margin-bottom: 10px;
-}
+    <nav class="navbar navbar-expand-lg">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Menu -->
+        <div class="d-flex align-items-center gap-4">
+          <a class="nav-link active" href="/Pages/Landing Page/Landing Page Men's Day.html">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Stories</a>
+        </div>
 
-/* Products 3 Column Layout */
-.products .row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
+        <!-- Right: Icons -->
+        <div class="d-flex align-items-center gap-4">
+          <a href="../Search Page/search.html"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+              width="24"
+              alt="Search"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
+              width="24"
+              alt="Profile"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+              width="24"
+              alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </nav>
 
-.products .col-md-4 {
-  padding: 10px;
-}
+    <!-- TODO: link product details page
+         TODO: link tops featured pages in other pages navbar -->
+    <div class="category-bar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/subTops/Tops Sub-Categories.html" style="text-decoration: underline;">Tops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/subFootwear/Footwear Sub-Categories.html">Footwear</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/subAccessories/Accessories Sub-Categories.html">Accessories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="#">Sale</a>
+        </li>
+      </ul>
+    </div>
 
-.product-box {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
+    <div class="content">
+      <div class="header d-flex flex-column">
+        <h6>Products</h6>
+        <h2 style="font-weight: bold;">Shirts</h2>
+        <h4>Featured</h4>
+      </div>
 
-.col-md-4 a {
-  text-decoration: none;
-  color: black;
-  background-color: #777;
-}
+      <div class="products">
+        <!-- products 3 column layout -->
+        <div class="row">
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt1.jpg" alt="Wool Cardigan" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>LinenHaze Shirt </h6>
+                      <p class="text-muted">Black</p>
+                    </div>
+                    <h6>$42</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div> 
+                </div>
+              </div>
+            </a>
+          </div>
+      
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt2.jpg" alt="Another Top" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>GridForm Shirt </h6>
+                      <p class="text-muted">Black</p>
+                    </div>
+                    <h6>$39</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt3.jpg" alt="Yet Another Top" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>NoirPleat Shirt</h6>
+                      <p class="text-muted">Dark Blue</p>
+                    </div>
+                    <h6>$47</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt4.jpg" alt="Fourth Top" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>DriftWave Shirt </h6>
+                      <p class="text-muted">Cream</p>
+                    </div>
+                    <h6>$35</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt5.jpg" alt="Fifth Top" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>ApexCollar Shirt</h6>
+                      <p class="text-muted">Blue</p>
+                    </div>
+                    <h6>$47</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      
+          <div class="col-md-4">
+            <a href="">
+              <div class="product-box">
+                <div class="image-container">
+                  <img src="shirt6.jpg" alt="Sixth Top" class="img-fluid" />
+                </div>
+                <div class="product-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6>VoidTuck Shirt </h6>
+                      <p class="text-muted">Black</p>
+                    </div>
+                    <h6>$52</h6>
+                  </div>
+                  <div class="button-group mt-3">
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+</div>      
 
-.product-box .image-container {
-  position: relative;
-  overflow: hidden;
-}
+<footer class="footer py-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-start">
+        <!-- Account -->
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+          <div class="footer-title">Acount</div>
+          <a href="#">Log In</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Redeem a Gift Card</a>
+        </div>
+        <!-- Company -->
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+          <div class="footer-title">Company</div>
+          <a href="#">About</a>
+          <a href="#">Environmental Initiatives</a>
+          <a href="#">Factories</a>
+          <a href="#">DEI</a>
+          <a href="#">Careers</a>
+          <a href="#">International</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <!-- Get Help -->
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+          <div class="footer-title">Get Help</div>
+          <a href="#">Help Center</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Bulk Orders</a>
+        </div>
+        <!-- Connect -->
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+          <div class="footer-title">Connect</div>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Affiliates</a>
+          <a href="#">Out Stores</a>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-12 col-lg-4">
+          <form>
+            <div class="input-group mt-2 mt-lg-0">
+              <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
+              <button class="input-group-text" type="submit" aria-label="Subscribe">
+                &#8594;
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Bottom links -->
+      <div class="footer-bottom mt-4">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Do Not Sell or Share My Personal Information</a>
+        <a href="#">CS Supply Chain Transparency</a>
+        <a href="#">Vendor Code of Conduct</a>
+        <a href="#">Sitemap Pages</a>
+        <a href="#">Sitemap Products</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 All Rights Reserved
+      </div>
+    </div>
+  </footer>
 
-.product-box .image-container img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.product-box:hover .image-container img {
-  transform: scale(1.05);
-}
-
-.product-box .product-details {
-  padding: 15px;
-}
-
-.product-box .product-details h6 {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.product-box .product-details p {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 0;
-}
-
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 1200px;
-}
-.image-container {
-  width: 100%;
-  height: 400px; /* or any fixed height you prefer */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.footer {
-  background: #f7f6f6;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
-.footer .footer-title {
-  
-  font-weight: 750;
-  margin-bottom: 0.75rem;
-}
-.footer a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.5rem;
-  transition: color 0.2s;
-}
-.footer a:hover {
-  color: #000;
-}
-.footer .form-control {
-  border-radius: 0;
-  border-right: none;
-  box-shadow: none;
-}
-.footer .input-group-text {
-  background: #2a2a2a;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-size: 1.25rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.footer .input-group-text:hover {
-  background: #000;
-}
-.footer-bottom {
-  border-top: 1px solid #eee;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  font-size: 13px;
-  color: #555;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.footer-copyright {
-  text-align: center;
-  margin-top: 0.5rem;
-  font-size: 13px;
-  color: #555;
-}
-
-@media (max-width: 991.98px) {
-  .footer .row > [class^="col-"] {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .footer {
-    font-size: 13px;
-  }
-  .footer .footer-title {
-    margin-bottom: 0.5rem;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-}
-/* Remove input shadow on focus */
-.footer .form-control:focus {
-  box-shadow: none;
-  border-color: #ccc;
-}
-
-.button-group {
-  margin-top: 10px;
-}
-
-.btn-add-to-cart {
-  background-color: white;
-  color: grey;
-  border: 1px solid grey;
-  border-radius: 20px;
-}
-
-.btn-buy-now {
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 20px;
-}
-
-.btn-add-to-cart:hover {
-  background-color: #f8f9fa; /* slight light grey on hover */
-  color: black;
-}
-
-.btn-buy-now:hover {
-  background-color: #333333; /* darker black on hover */
-}
-
-
-
+    
+  </body>
+</html>
