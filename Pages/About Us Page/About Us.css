@@ -143,15 +143,16 @@
 
 
 .hero {
-    position: relative;
-    background: url('main1.webp') no-repeat center center;
-    background-size: cover;
-    height: 90vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  background: url('main1.webp') no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  width: 110%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
