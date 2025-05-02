@@ -898,9 +898,90 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Discounts</a>
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#discountModal"
+            >Discounts</a
+          >
         </li>
       </ul>
+    </div>
+
+    <!-- Discount Modal -->
+    <div
+      class="modal fade"
+      id="discountModal"
+      tabindex="-1"
+      aria-labelledby="discountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content shadow-lg rounded-4">
+          <div class="modal-header bg-dark text-white rounded-top-4">
+            <h5 class="modal-title" id="discountModalLabel">
+              🎉 Exclusive Discounts
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4" style="background-color: #f8f9fa">
+            <p class="mb-4" style="font-size: 1.1em; color: #333">
+              Check out our latest deals and coupons to save on your favorite
+              outfits!
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >10% off with code <strong>DISCOUNT10</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT10')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >20% off with code <strong>DISCOUNT20</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT20')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >30% off with code <strong>DISCOUNT30</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT30')"
+                >
+                  Copy Code
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section
@@ -1911,196 +1992,94 @@
             &times;
           </button>
         </div>
-        <!-- Cart Items -->
-        <div class="cart-items-list">
-          <!-- Cart Item 1 -->
-          <div class="cart-item">
-            <img class="cart-item-img" src="SampleCart1.png" alt="Turtleneck" />
-            <div class="cart-item-details">
-              <div class="cart-item-title">
-                The Organic Cotton Long-Sleeve Turtleneck
-              </div>
-              <div class="cart-item-meta">Medium | Black</div>
-              <div class="cart-item-pricing">
-                <span class="cart-item-oldprice">$50</span>
-                <span class="cart-item-newprice">$35</span>
-                <span class="cart-item-discount">(30% Off)</span>
-              </div>
-              <div class="cart-item-actions">
-                <button class="cart-qty-btn" aria-label="Decrease quantity">
-                  -
-                </button>
-                <span class="cart-qty-value">1</span>
-                <button class="cart-qty-btn" aria-label="Increase quantity">
-                  +
-                </button>
-                <button class="cart-item-remove" aria-label="Remove item">
-                  <svg height="16" width="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                      d="M6.5 6.5L9.5 9.5M9.5 6.5L6.5 9.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <rect
-                      x="3.5"
-                      y="3.5"
-                      width="9"
-                      height="9"
-                      rx="2"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Cart Item 2 -->
-          <div class="cart-item">
-            <img
-              class="cart-item-img"
-              src="SampleCart2.png"
-              alt="Oversized Shirt Jacket"
-            />
-            <div class="cart-item-details">
-              <div class="cart-item-title">
-                The ReWool@ Oversized Shirt Jacket
-              </div>
-              <div class="cart-item-meta">Small | Black</div>
-              <div class="cart-item-pricing">
-                <span class="cart-item-oldprice">$238</span>
-                <span class="cart-item-newprice">$167</span>
-                <span class="cart-item-discount">(30% Off)</span>
-              </div>
-              <div class="cart-item-actions">
-                <button class="cart-qty-btn" aria-label="Decrease quantity">
-                  -
-                </button>
-                <span class="cart-qty-value">1</span>
-                <button class="cart-qty-btn" aria-label="Increase quantity">
-                  +
-                </button>
-                <button class="cart-item-remove" aria-label="Remove item">
-                  <svg height="16" width="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                      d="M6.5 6.5L9.5 9.5M9.5 6.5L6.5 9.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <rect
-                      x="3.5"
-                      y="3.5"
-                      width="9"
-                      height="9"
-                      rx="2"
-                      stroke="currentColor"
-                      stroke-width="1.2"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Upsell Section -->
-        <div class="cart-upsell-section">
-          <div class="cart-upsell-title">Before You Go</div>
-          <div class="cart-upsell-box">
-            <img
-              class="cart-upsell-img"
-              src="SampleCart3.png"
-              alt="The Good Merino Wool Beanie"
-            />
-            <div class="cart-upsell-details">
-              <div class="cart-upsell-title2">The Good Merino Wool Beanie</div>
-              <div class="cart-upsell-meta">One Size | Chambray Blue</div>
-              <div class="cart-upsell-bottom">
-                <span class="cart-upsell-price">$35</span>
-                <button class="cart-upsell-add">ADD</button>
-              </div>
-            </div>
-          </div>
-          <div class="cart-upsell-dots">
-            <span class="cart-upsell-dot active"></span>
-            <span class="cart-upsell-dot"></span>
-            <span class="cart-upsell-dot"></span>
-          </div>
-        </div>
-        <!-- Cart Footer -->
-        <div class="cart-modal-footer">
-          <div class="cart-subtotal-row">
-            <span>Subtotal (2 items)</span>
-            <span>$202</span>
-          </div>
-          <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
-          <div class="cart-footer-note">
-            Psst, get it now before it sells out.
-          </div>
-        </div>
-      </aside>
+<!-- Cart Modal -->
+<div class="cart-modal-overlay" id="cartModalOverlay">
+  <aside class="cart-modal" id="cartModal" tabindex="-1" aria-modal="true">
+    <div class="cart-modal-header">
+      <div class="cart-modal-title">Your Cart</div>
+      <button class="cart-modal-close" id="cartModalClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsList"></div>
+    <div class="cart-modal-footer">
+      <div class="cart-coupon-row" style="display:flex;gap:8px;margin-bottom:15px;">
+        <input type="text" id="cartCouponInput" class="form-control" placeholder="Enter coupon code" style="flex:1;">
+        <button id="applyCouponBtn" class="btn" type="button" style="background-color: black; color: white;">Apply Coupon</button>
+      </div>
+      <div id="cartCouponMsg" style="min-height:22px;font-size:0.95em;color:#2d7a2d;margin-bottom:10px;"></div>
+      <div class="cart-subtotal-row">
+        <span id="cartSubtotalLabel">Subtotal (0 items)</span>
+        <span id="cartSubtotalAmount">$0</span>
+      </div>
+      <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
+      <div class="cart-footer-note">Psst, get it now before it sells out.</div>
+    </div>
+  </aside>
+</div>
+    
     </div>
 
-    <footer class="footer py-5">
-      <div class="container">
-        <div class="row justify-content-between align-items-start">
-          <!-- Account -->
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-            <div class="footer-title">Acount</div>
-            <a href="#">Log In</a>
-            <a href="#">Sign Up</a>
-            <a href="#">Redeem a Gift Card</a>
-          </div>
-          <!-- Company -->
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-            <div class="footer-title">Company</div>
-            <a href="#">About</a>
-            <a href="#">Environmental Initiatives</a>
-            <a href="#">Factories</a>
-            <a href="#">DEI</a>
-            <a href="#">Careers</a>
-            <a href="#">International</a>
-            <a href="#">Accessibility</a>
-          </div>
-          <!-- Get Help -->
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-            <div class="footer-title">Get Help</div>
-            <a href="#">Help Center</a>
-            <a href="#">Return Policy</a>
-            <a href="#">Shipping Info</a>
-            <a href="#">Bulk Orders</a>
-          </div>
-          <!-- Connect -->
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-            <div class="footer-title">Connect</div>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Affiliates</a>
-            <a href="#">Out Stores</a>
-          </div>
-          <!-- Newsletter -->
-          <div class="col-12 col-lg-4">
-            <form>
-              <div class="input-group mt-2 mt-lg-0">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email Address"
-                  aria-label="Email"
-                />
-                <button
-                  class="input-group-text"
-                  type="submit"
-                  aria-label="Subscribe"
-                >
-                  &#8594;
-                </button>
-              </div>
-            </form>
-          </div>
+<div class="container">
+  <div class="row justify-content-between align-items-start">
+    <!-- Account -->
+    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+      <div class="footer-title">Acount</div>
+      <a href="#">Log In</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Redeem a Gift Card</a>
+    </div>
+    <!-- Company -->
+    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+      <div class="footer-title">Company</div>
+      <a href="#">About</a>
+      <a href="#">Environmental Initiatives</a>
+      <a href="#">Factories</a>
+      <a href="#">DEI</a>
+      <a href="#">Careers</a>
+      <a href="#">International</a>
+      <a href="#">Accessibility</a>
+    </div>
+    <!-- Get Help -->
+    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+      <div class="footer-title">Get Help</div>
+      <a href="#">Help Center</a>
+      <a href="#">Return Policy</a>
+      <a href="#">Shipping Info</a>
+      <a href="#">Bulk Orders</a>
+    </div>
+    <!-- Connect -->
+    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+      <div class="footer-title">Connect</div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Affiliates</a>
+      <a href="#">Out Stores</a>
+    </div>
+    <!-- Newsletter -->
+    <div class="col-12 col-lg-4">
+      <form>
+        <div class="input-group mt-2 mt-lg-0">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email Address"
+            aria-label="Email"
+          />
+          <button
+            class="input-group-text"
+            type="submit"
+            aria-label="Subscribe"
+          >
+            &#8594;
+          </button>
         </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+    <footer class="footer py-5">
         <!-- Bottom links -->
         <div class="footer-bottom mt-4">
           <a href="#">Privacy Policy</a>

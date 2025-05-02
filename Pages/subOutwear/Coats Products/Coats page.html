@@ -77,11 +77,92 @@
           <a class="nav-link" href="/Pages/subAccessories/Accessories Sub-Categories.html">Accessories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Sale</a>
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#discountModal"
+            >Discounts</a
+          >
         </li>
       </ul>
     </div>
 
+    <!-- Discount Modal -->
+    <div
+      class="modal fade"
+      id="discountModal"
+      tabindex="-1"
+      aria-labelledby="discountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content shadow-lg rounded-4">
+          <div class="modal-header bg-dark text-white rounded-top-4">
+            <h5 class="modal-title" id="discountModalLabel">
+              🎉 Exclusive Discounts
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4" style="background-color: #f8f9fa">
+            <p class="mb-4" style="font-size: 1.1em; color: #333">
+              Check out our latest deals and coupons to save on your favorite
+              outfits!
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >10% off with code <strong>DISCOUNT10</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT10')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >20% off with code <strong>DISCOUNT20</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT20')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >30% off with code <strong>DISCOUNT30</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT30')"
+                >
+                  Copy Code
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="content">
       <div class="header d-flex flex-column">
         <h6>Products</h6>

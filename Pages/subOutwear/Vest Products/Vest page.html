@@ -28,7 +28,11 @@
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Left: Menu -->
         <div class="d-flex align-items-center gap-4">
-          <a class="nav-link active" href="/Pages/Landing Page/Landing Page Men's Day.html">Home</a>
+          <a
+            class="nav-link active"
+            href="/Pages/Landing Page/Landing Page Men's Day.html"
+            >Home</a
+          >
           <a class="nav-link" href="#">About</a>
           <a class="nav-link" href="#">Stories</a>
         </div>
@@ -62,30 +66,132 @@
     <div class="category-bar">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="/Pages/subTops/Tops Sub-Categories.html" style="text-decoration: underline;">Tops</a>
+          <a
+            class="nav-link"
+            href="/Pages/subTops/Tops Sub-Categories.html"
+            style="text-decoration: underline"
+            >Tops</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Pages/subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
+          <a
+            class="nav-link"
+            href="/Pages/subBottoms/Bottoms Sub-Categories.html"
+            >Bottoms</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Pages/subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
+          <a
+            class="nav-link"
+            href="/Pages/subOutwear/Outerwear Sub-Categories.html"
+            >Outerwear</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Pages/subFootwear/Footwear Sub-Categories.html">Footwear</a>
+          <a
+            class="nav-link"
+            href="/Pages/subFootwear/Footwear Sub-Categories.html"
+            >Footwear</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Pages/subAccessories/Accessories Sub-Categories.html">Accessories</a>
+          <a
+            class="nav-link"
+            href="/Pages/subAccessories/Accessories Sub-Categories.html"
+            >Accessories</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Sale</a>
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#discountModal"
+            >Discounts</a
+          >
         </li>
       </ul>
+    </div>
+
+    <!-- Discount Modal -->
+    <div
+      class="modal fade"
+      id="discountModal"
+      tabindex="-1"
+      aria-labelledby="discountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content shadow-lg rounded-4">
+          <div class="modal-header bg-dark text-white rounded-top-4">
+            <h5 class="modal-title" id="discountModalLabel">
+              🎉 Exclusive Discounts
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4" style="background-color: #f8f9fa">
+            <p class="mb-4" style="font-size: 1.1em; color: #333">
+              Check out our latest deals and coupons to save on your favorite
+              outfits!
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >10% off with code <strong>DISCOUNT10</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT10')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >20% off with code <strong>DISCOUNT20</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT20')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >30% off with code <strong>DISCOUNT30</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT30')"
+                >
+                  Copy Code
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="content">
       <div class="header d-flex flex-column">
         <h6>Products</h6>
-        <h2 style="font-weight: bold;">Vest's</h2>
+        <h2 style="font-weight: bold">Vest's</h2>
         <h4>Featured</h4>
       </div>
 
@@ -99,7 +205,9 @@
                   <img src="vest1.jpg" alt="Wool Cardigan" class="img-fluid" />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>QuantumPuff Vest</h6>
                       <p class="text-muted">Black</p>
@@ -107,14 +215,18 @@
                     <h6>$140</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                  </div> 
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </a>
           </div>
-      
+
           <div class="col-md-4">
             <a href="">
               <div class="product-box">
@@ -122,7 +234,9 @@
                   <img src="vest2.jpg" alt="Another Top" class="img-fluid" />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>GridLock Vest</h6>
                       <p class="text-muted">Black</p>
@@ -130,22 +244,32 @@
                     <h6>$155</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-      
+
           <div class="col-md-4">
             <a href="">
               <div class="product-box">
                 <div class="image-container">
-                  <img src="vest3.jpg" alt="Yet Another Top" class="img-fluid" />
+                  <img
+                    src="vest3.jpg"
+                    alt="Yet Another Top"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>UrbanThermo Vest</h6>
                       <p class="text-muted">Dark Blue</p>
@@ -153,15 +277,19 @@
                     <h6>$163</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-      
+
         <div class="row mt-4">
           <div class="col-md-4">
             <a href="">
@@ -170,7 +298,9 @@
                   <img src="vest4.jpg" alt="Fourth Top" class="img-fluid" />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>NomadCore Vest</h6>
                       <p class="text-muted">Cream</p>
@@ -178,14 +308,18 @@
                     <h6>$135</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-      
+
           <div class="col-md-4">
             <a href="">
               <div class="product-box">
@@ -193,7 +327,9 @@
                   <img src="vest5.jpg" alt="Fifth Top" class="img-fluid" />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>AeroFleece Vest</h6>
                       <p class="text-muted">Blue</p>
@@ -201,14 +337,18 @@
                     <h6>$160</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-      
+
           <div class="col-md-4">
             <a href="">
               <div class="product-box">
@@ -216,7 +356,9 @@
                   <img src="vest6.jpg" alt="Sixth Top" class="img-fluid" />
                 </div>
                 <div class="product-details">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div>
                       <h6>ZeroG Vest</h6>
                       <p class="text-muted">Black</p>
@@ -224,8 +366,12 @@
                     <h6>$159</h6>
                   </div>
                   <div class="button-group mt-3">
-                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                    <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+                    <button class="btn btn-add-to-cart btn-sm w-100 mb-2">
+                      Add to Cart
+                    </button>
+                    <button class="btn btn-buy-now btn-sm w-100">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -233,74 +379,79 @@
           </div>
         </div>
       </div>
-</div>      
-
-<footer class="footer py-5">
-    <div class="container">
-      <div class="row justify-content-between align-items-start">
-        <!-- Account -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Acount</div>
-          <a href="#">Log In</a>
-          <a href="#">Sign Up</a>
-          <a href="#">Redeem a Gift Card</a>
-        </div>
-        <!-- Company -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Company</div>
-          <a href="#">About</a>
-          <a href="#">Environmental Initiatives</a>
-          <a href="#">Factories</a>
-          <a href="#">DEI</a>
-          <a href="#">Careers</a>
-          <a href="#">International</a>
-          <a href="#">Accessibility</a>
-        </div>
-        <!-- Get Help -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Get Help</div>
-          <a href="#">Help Center</a>
-          <a href="#">Return Policy</a>
-          <a href="#">Shipping Info</a>
-          <a href="#">Bulk Orders</a>
-        </div>
-        <!-- Connect -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Connect</div>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">Affiliates</a>
-          <a href="#">Out Stores</a>
-        </div>
-        <!-- Newsletter -->
-        <div class="col-12 col-lg-4">
-          <form>
-            <div class="input-group mt-2 mt-lg-0">
-              <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
-              <button class="input-group-text" type="submit" aria-label="Subscribe">
-                &#8594;
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- Bottom links -->
-      <div class="footer-bottom mt-4">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Do Not Sell or Share My Personal Information</a>
-        <a href="#">CS Supply Chain Transparency</a>
-        <a href="#">Vendor Code of Conduct</a>
-        <a href="#">Sitemap Pages</a>
-        <a href="#">Sitemap Products</a>
-      </div>
-      <div class="footer-copyright">
-        &copy; 2023 All Rights Reserved
-      </div>
     </div>
-  </footer>
 
-    
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-start">
+          <!-- Account -->
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+            <div class="footer-title">Acount</div>
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Redeem a Gift Card</a>
+          </div>
+          <!-- Company -->
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+            <div class="footer-title">Company</div>
+            <a href="#">About</a>
+            <a href="#">Environmental Initiatives</a>
+            <a href="#">Factories</a>
+            <a href="#">DEI</a>
+            <a href="#">Careers</a>
+            <a href="#">International</a>
+            <a href="#">Accessibility</a>
+          </div>
+          <!-- Get Help -->
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+            <div class="footer-title">Get Help</div>
+            <a href="#">Help Center</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">Bulk Orders</a>
+          </div>
+          <!-- Connect -->
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+            <div class="footer-title">Connect</div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Affiliates</a>
+            <a href="#">Out Stores</a>
+          </div>
+          <!-- Newsletter -->
+          <div class="col-12 col-lg-4">
+            <form>
+              <div class="input-group mt-2 mt-lg-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  aria-label="Email"
+                />
+                <button
+                  class="input-group-text"
+                  type="submit"
+                  aria-label="Subscribe"
+                >
+                  &#8594;
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Bottom links -->
+        <div class="footer-bottom mt-4">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Do Not Sell or Share My Personal Information</a>
+          <a href="#">CS Supply Chain Transparency</a>
+          <a href="#">Vendor Code of Conduct</a>
+          <a href="#">Sitemap Pages</a>
+          <a href="#">Sitemap Products</a>
+        </div>
+        <div class="footer-copyright">&copy; 2023 All Rights Reserved</div>
+      </div>
+    </footer>
   </body>
 </html>
