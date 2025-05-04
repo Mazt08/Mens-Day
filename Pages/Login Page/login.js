@@ -3,28 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const usernameInput = document.querySelector('input[type="text"]');
   const passwordInput = document.querySelector('input[type="password"]');
 
-  // Add show/hide password toggle
-  const passwordGroup = passwordInput.closest(".input-group");
-  const toggleBtn = document.createElement("span");
-  toggleBtn.innerHTML = `<i class="bi bi-eye-slash text-white-50"></i>`;
-  toggleBtn.classList.add(
-    "input-group-text",
-    "bg-transparent",
-    "border-0",
-    "toggle-password"
-  );
-  toggleBtn.style.cursor = "pointer";
-  passwordGroup.appendChild(toggleBtn);
-
-  toggleBtn.addEventListener("click", function () {
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-      toggleBtn.innerHTML = `<i class="bi bi-eye text-white-50"></i>`;
-    } else {
-      passwordInput.type = "password";
-      toggleBtn.innerHTML = `<i class="bi bi-eye-slash text-white-50"></i>`;
-    }
-  });
 
   // Validate form on submit
   form.addEventListener("submit", function (event) {
@@ -52,3 +30,31 @@ document.addEventListener("DOMContentLoaded", function () {
     loginForm.style.transform = "translateY(0)";
   }, 100);
 });
+        document.getElementById('togglePassword1').addEventListener('click', function () {
+          const passwordField = document.getElementById('password1');
+          const icon = this;
+          if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+          } else {
+            passwordField.type = 'password';
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+          }
+        });
+      
+        // Toggle password visibility for the second input
+        document.getElementById('togglePassword2').addEventListener('click', function () {
+          const passwordField = document.getElementById('password2');
+          const icon = this;
+          if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+          } else {
+            passwordField.type = 'password';
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+          }
+        });
