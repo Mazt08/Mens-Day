@@ -39,13 +39,25 @@
 
         <div class="d-flex align-items-center gap-4">
           <a href="#">
-            <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="24" alt="Search"/>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+              width="24"
+              alt="Search"
+            />
           </a>
-          <a href="#">
-            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="24" alt="Profile"/>
+          <a href="../Login Page/login.html">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
+              width="24"
+              alt="Profile"
+            />
           </a>
           <a href="#" id="cartIcon">
-            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24" alt="Cart"/>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+              width="24"
+              alt="Cart"
+            />
           </a>
         </div>
       </div>
@@ -53,56 +65,127 @@
 
     <!-- TODO: link product details page
          TODO: link tops featured pages in other pages navbar -->
-         <div class="category-bar">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="../../subTops/Tops Sub-Categories.html">Tops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.html">Footwear</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.html"style="text-decoration: underline;">Accessories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#discountModal">Discounts</a>
-            </li>        
-          </ul>
+    <div class="category-bar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../../subTops/Tops Sub-Categories.html"
+            >Tops</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="../../subBottoms/Bottoms Sub-Categories.html"
+            >Bottoms</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="../../subOutwear/Outerwear Sub-Categories.html"
+            >Outerwear</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="../../subFootwear/Footwear Sub-Categories.html"
+            >Footwear</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="../../subAccessories/Accessories Sub-Categories.html"
+            style="text-decoration: underline"
+            >Accessories</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#discountModal"
+            >Discounts</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Discount Modal -->
+    <div
+      class="modal fade"
+      id="discountModal"
+      tabindex="-1"
+      aria-labelledby="discountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content shadow-lg rounded-4">
+          <div class="modal-header bg-dark text-white rounded-top-4">
+            <h5 class="modal-title" id="discountModalLabel">
+              🎉 Exclusive Discounts
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4" style="background-color: #f8f9fa">
+            <p class="mb-4" style="font-size: 1.1em; color: #333">
+              Check out our latest deals and coupons to save on your favorite
+              outfits!
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >10% off with code <strong>DISCOUNT10</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT10')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >20% off with code <strong>DISCOUNT20</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT20')"
+                >
+                  Copy Code
+                </button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm"
+              >
+                <span style="color: #212529"
+                  >30% off with code <strong>DISCOUNT30</strong></span
+                >
+                <button
+                  class="btn btn-sm"
+                  style="background-color: black; color: white"
+                  onclick="copyToClipboard('DISCOUNT30')"
+                >
+                  Copy Code
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-<!-- Discount Modal -->
-<div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content shadow-lg rounded-4">
-      <div class="modal-header bg-dark text-white rounded-top-4">
-        <h5 class="modal-title" id="discountModalLabel">🎉 Exclusive Discounts</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4" style="background-color: #f8f9fa;">
-        <p class="mb-4" style="font-size: 1.1em; color: #333;">Check out our latest deals and coupons to save on your favorite outfits!</p>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
-            <span style="color: #212529;">10% off with code <strong>DISCOUNT10</strong></span>
-            <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT10')">Copy Code</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
-            <span style="color: #212529;">20% off with code <strong>DISCOUNT20</strong></span>
-            <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT20')">Copy Code</button>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm">
-            <span style="color: #212529;">30% off with code <strong>DISCOUNT30</strong></span>
-            <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT30')">Copy Code</button>
-          </li>
-        </ul>
       </div>
     </div>
-  </div>
-</div>
 
     <div class="content">
       <div class="header d-flex flex-column">
@@ -116,11 +199,13 @@
         <div class="row">
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="RetroGlow Tee"
                 data-color="Mirage"
                 data-image="tshirt1.jpg"
-                data-price="163">
+                data-price="163"
+              >
                 <div class="image-container">
                   <img
                     src="tshirt1.jpg"
@@ -153,13 +238,19 @@
 
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="SilkBlend Tee"
                 data-color="Sorell Brown"
                 data-image="tshirt2.jpg"
-                data-price="162">
+                data-price="162"
+              >
                 <div class="image-container">
-                  <img src="tshirt2.jpg" alt="SilkBlend Tee" class="img-fluid" />
+                  <img
+                    src="tshirt2.jpg"
+                    alt="SilkBlend Tee"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="product-details">
                   <div
@@ -186,17 +277,15 @@
 
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="RogueInk Tee"
                 data-color="Mid Grey"
                 data-image="tshirt3.jpg"
-                data-price="163">
+                data-price="163"
+              >
                 <div class="image-container">
-                  <img
-                    src="tshirt3.jpg"
-                    alt="RogueInk Tee"
-                    class="img-fluid"
-                  />
+                  <img src="tshirt3.jpg" alt="RogueInk Tee" class="img-fluid" />
                 </div>
                 <div class="product-details">
                   <div
@@ -225,11 +314,13 @@
         <div class="row mt-4">
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="EchoPalm Tee"
                 data-color="Woody Brown"
                 data-image="tshirt4.jpg"
-                data-price="154">
+                data-price="154"
+              >
                 <div class="image-container">
                   <img src="tshirt4.jpg" alt="EchoPalm Tee" class="img-fluid" />
                 </div>
@@ -258,13 +349,19 @@
 
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="PhantomFit Tee"
                 data-color="Double Spanish White"
                 data-image="tshirt5.jpg"
-                data-price="160">
+                data-price="160"
+              >
                 <div class="image-container">
-                  <img src="tshirt5.jpg" alt="PhantomFit Tee" class="img-fluid" />
+                  <img
+                    src="tshirt5.jpg"
+                    alt="PhantomFit Tee"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="product-details">
                   <div
@@ -291,13 +388,19 @@
 
           <div class="col-md-4">
             <a href="">
-              <div class="product-box"
+              <div
+                class="product-box"
                 data-name="AeroCotton Tee"
                 data-color="Vanilla"
                 data-image="tshirt6.jpg"
-                data-price="173">
+                data-price="173"
+              >
                 <div class="image-container">
-                  <img src="tshirt6.jpg" alt="AeroCotton Tee" class="img-fluid" />
+                  <img
+                    src="tshirt6.jpg"
+                    alt="AeroCotton Tee"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="product-details">
                   <div
@@ -325,29 +428,61 @@
       </div>
     </div>
 
-<!-- Cart Modal -->
-<div class="cart-modal-overlay" id="cartModalOverlay">
-  <aside class="cart-modal" id="cartModal" tabindex="-1" aria-modal="true">
-    <div class="cart-modal-header">
-      <div class="cart-modal-title">Your Cart</div>
-      <button class="cart-modal-close" id="cartModalClose" aria-label="Close">&times;</button>
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartModalOverlay">
+      <aside class="cart-modal" id="cartModal" tabindex="-1" aria-modal="true">
+        <div class="cart-modal-header">
+          <div class="cart-modal-title">Your Cart</div>
+          <button
+            class="cart-modal-close"
+            id="cartModalClose"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="cart-items-list" id="cartItemsList"></div>
+        <div class="cart-modal-footer">
+          <div
+            class="cart-coupon-row"
+            style="display: flex; gap: 8px; margin-bottom: 15px"
+          >
+            <input
+              type="text"
+              id="cartCouponInput"
+              class="form-control"
+              placeholder="Enter coupon code"
+              style="flex: 1"
+            />
+            <button
+              id="applyCouponBtn"
+              class="btn"
+              type="button"
+              style="background-color: black; color: white"
+            >
+              Apply Coupon
+            </button>
+          </div>
+          <div
+            id="cartCouponMsg"
+            style="
+              min-height: 22px;
+              font-size: 0.95em;
+              color: #2d7a2d;
+              margin-bottom: 10px;
+            "
+          ></div>
+          <div class="cart-subtotal-row">
+            <span id="cartSubtotalLabel">Subtotal (0 items)</span>
+            <span id="cartSubtotalAmount">$0</span>
+          </div>
+          <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
+          <div class="cart-footer-note">
+            Psst, get it now before it sells out.
+          </div>
+        </div>
+      </aside>
     </div>
-    <div class="cart-items-list" id="cartItemsList"></div>
-    <div class="cart-modal-footer">
-      <div class="cart-coupon-row" style="display:flex;gap:8px;margin-bottom:15px;">
-        <input type="text" id="cartCouponInput" class="form-control" placeholder="Enter coupon code" style="flex:1;">
-        <button id="applyCouponBtn" class="btn" type="button" style="background-color: black; color: white;">Apply Coupon</button>
-      </div>
-      <div id="cartCouponMsg" style="min-height:22px;font-size:0.95em;color:#2d7a2d;margin-bottom:10px;"></div>
-      <div class="cart-subtotal-row">
-        <span id="cartSubtotalLabel">Subtotal (0 items)</span>
-        <span id="cartSubtotalAmount">$0</span>
-      </div>
-      <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
-      <div class="cart-footer-note">Psst, get it now before it sells out.</div>
-    </div>
-  </aside>
-</div>
 
     <footer class="footer py-5">
       <div class="container">
@@ -425,75 +560,81 @@
     <script>
       // ---- Cart State ----
       const cart = [];
-      
+
       // ---- Coupon State ----
       let appliedCoupon = null;
       let couponDiscount = 0;
       const coupons = {
-        "DISCOUNT10": 10,
-        "DISCOUNT20": 20,
-        "DISCOUNT30": 30
+        DISCOUNT10: 10,
+        DISCOUNT20: 20,
+        DISCOUNT30: 30,
       };
-      
+
       // ---- DOM Elements ----
-      const cartIcon = document.getElementById('cartIcon');
-      const cartModalOverlay = document.getElementById('cartModalOverlay');
-      const cartModalClose = document.getElementById('cartModalClose');
-      const cartItemsList = document.getElementById('cartItemsList');
-      const cartCount = document.getElementById('cartCount');
-      const cartSubtotalAmount = document.getElementById('cartSubtotalAmount');
-      const cartSubtotalLabel = document.getElementById('cartSubtotalLabel');
-      const checkoutBtn = document.querySelector('.cart-checkout-btn');
-      
+      const cartIcon = document.getElementById("cartIcon");
+      const cartModalOverlay = document.getElementById("cartModalOverlay");
+      const cartModalClose = document.getElementById("cartModalClose");
+      const cartItemsList = document.getElementById("cartItemsList");
+      const cartCount = document.getElementById("cartCount");
+      const cartSubtotalAmount = document.getElementById("cartSubtotalAmount");
+      const cartSubtotalLabel = document.getElementById("cartSubtotalLabel");
+      const checkoutBtn = document.querySelector(".cart-checkout-btn");
+
       // ---- Coupon DOM ----
-      const couponInput = document.getElementById('cartCouponInput');
-      const applyCouponBtn = document.getElementById('applyCouponBtn');
-      const couponMsg = document.getElementById('cartCouponMsg');
-      
+      const couponInput = document.getElementById("cartCouponInput");
+      const applyCouponBtn = document.getElementById("applyCouponBtn");
+      const couponMsg = document.getElementById("cartCouponMsg");
+
       // ---- Modal Open/Close ----
-      cartIcon?.addEventListener('click', function(e) {
+      cartIcon?.addEventListener("click", function (e) {
         e.preventDefault();
-        cartModalOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        cartModalOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
       });
       function closeCartModal() {
-        cartModalOverlay.classList.remove('active');
-        document.body.style.overflow = '';
+        cartModalOverlay.classList.remove("active");
+        document.body.style.overflow = "";
       }
-      cartModalClose?.addEventListener('click', closeCartModal);
-      cartModalOverlay.addEventListener('click', function(e){
-        if(e.target === cartModalOverlay) closeCartModal();
+      cartModalClose?.addEventListener("click", closeCartModal);
+      cartModalOverlay.addEventListener("click", function (e) {
+        if (e.target === cartModalOverlay) closeCartModal();
       });
-      document.addEventListener('keydown', function(e) {
-        if(e.key === "Escape") closeCartModal();
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeCartModal();
       });
-      
+
       // ---- Add to Cart Logic ----
-      document.body.addEventListener('click', function(e) {
-        const btn = e.target.closest('.btn-add-to-cart');
+      document.body.addEventListener("click", function (e) {
+        const btn = e.target.closest(".btn-add-to-cart");
         if (!btn) return;
         e.preventDefault();
-      
-        let productBox = btn.closest('.product-box');
+
+        let productBox = btn.closest(".product-box");
         if (!productBox) return;
-      
-        let name = productBox.getAttribute('data-name');
-        let color = productBox.getAttribute('data-color');
-        let image = productBox.getAttribute('data-image');
-        let price = productBox.getAttribute('data-price');
-      
-        if (!name) name = productBox.querySelector('h6')?.textContent.trim() || '';
-        if (!color) color = productBox.querySelector('.text-muted')?.textContent.trim() || '';
-        if (!image) image = productBox.querySelector('img')?.getAttribute('src') || '';
+
+        let name = productBox.getAttribute("data-name");
+        let color = productBox.getAttribute("data-color");
+        let image = productBox.getAttribute("data-image");
+        let price = productBox.getAttribute("data-price");
+
+        if (!name)
+          name = productBox.querySelector("h6")?.textContent.trim() || "";
+        if (!color)
+          color =
+            productBox.querySelector(".text-muted")?.textContent.trim() || "";
+        if (!image)
+          image = productBox.querySelector("img")?.getAttribute("src") || "";
         if (!price) {
-          let priceText = productBox.querySelector('.d-flex h6:last-child')?.textContent.replace(/[^0-9.]+/g, '');
-          price = priceText || '0';
+          let priceText = productBox
+            .querySelector(".d-flex h6:last-child")
+            ?.textContent.replace(/[^0-9.]+/g, "");
+          price = priceText || "0";
         }
-      
+
         price = parseFloat(price);
-      
-        let item = cart.find(i => i.name === name && i.color === color);
-        if(item) {
+
+        let item = cart.find((i) => i.name === name && i.color === color);
+        if (item) {
           item.qty++;
         } else {
           cart.push({
@@ -501,31 +642,34 @@
             color,
             image,
             price,
-            qty: 1
+            qty: 1,
           });
         }
         updateCartUI();
-        cartModalOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        cartModalOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
       });
-      
+
       // ---- Cart UI Update ----
       function updateCartUI() {
-        cartItemsList.innerHTML = '';
-        let subtotal = 0, qtyTotal = 0;
+        cartItemsList.innerHTML = "";
+        let subtotal = 0,
+          qtyTotal = 0;
         cart.forEach((item, idx) => {
           const lineTotal = item.price * item.qty;
           subtotal += lineTotal;
           qtyTotal += item.qty;
-          const div = document.createElement('div');
-          div.className = 'cart-item';
+          const div = document.createElement("div");
+          div.className = "cart-item";
           div.innerHTML = `
             <img class="cart-item-img" src="${item.image}" alt="${item.name}" />
             <div class="cart-item-details">
               <div class="cart-item-title">${item.name}</div>
-              <div class="cart-item-meta">${item.color ? item.color : ''}</div>
+              <div class="cart-item-meta">${item.color ? item.color : ""}</div>
               <div class="cart-item-pricing">
-                <span class="cart-item-linetotal">$${(item.price * item.qty).toFixed(2)}</span>
+                <span class="cart-item-linetotal">$${(
+                  item.price * item.qty
+                ).toFixed(2)}</span>
               </div>
               <div class="cart-item-actions">
                 <button class="cart-qty-btn" aria-label="Decrease quantity" data-idx="${idx}" data-action="decrease">-</button>
@@ -542,31 +686,34 @@
           `;
           cartItemsList.appendChild(div);
         });
-      
+
         let discount = 0;
         if (couponDiscount > 0) {
-          discount = subtotal * couponDiscount / 100;
+          discount = (subtotal * couponDiscount) / 100;
         }
         const total = subtotal - discount;
-      
-        cartSubtotalAmount.textContent = '$' + total.toFixed(2);
+
+        cartSubtotalAmount.textContent = "$" + total.toFixed(2);
         if (couponDiscount > 0) {
           cartSubtotalAmount.textContent += ` (Saved $${discount.toFixed(2)})`;
         }
-        cartSubtotalLabel.textContent = `Subtotal (${qtyTotal} item${qtyTotal!==1?'s':''})`;
+        cartSubtotalLabel.textContent = `Subtotal (${qtyTotal} item${
+          qtyTotal !== 1 ? "s" : ""
+        })`;
         cartCount.textContent = qtyTotal;
-      
+
         if (cart.length === 0) {
-          cartItemsList.innerHTML = '<div style="padding:32px 0 12px 0;text-align:center;color:#888;">Your cart is empty.</div>';
-          cartSubtotalAmount.textContent = '$0';
-          cartSubtotalLabel.textContent = 'Subtotal (0 items)';
-          cartCount.textContent = '0';
+          cartItemsList.innerHTML =
+            '<div style="padding:32px 0 12px 0;text-align:center;color:#888;">Your cart is empty.</div>';
+          cartSubtotalAmount.textContent = "$0";
+          cartSubtotalLabel.textContent = "Subtotal (0 items)";
+          cartCount.textContent = "0";
         }
       }
-      
+
       // ---- Coupon Apply ----
       if (applyCouponBtn) {
-        applyCouponBtn.addEventListener('click', function() {
+        applyCouponBtn.addEventListener("click", function () {
           const code = couponInput.value.trim().toUpperCase();
           if (!code) {
             couponMsg.textContent = "Please enter a coupon code.";
@@ -588,30 +735,30 @@
           }
         });
       }
-      
+
       // ---- Cart Item Actions (Qty/Remove) ----
-      cartItemsList.addEventListener('click', function(e) {
-        const btn = e.target.closest('button');
+      cartItemsList.addEventListener("click", function (e) {
+        const btn = e.target.closest("button");
         if (!btn) return;
-        const idx = parseInt(btn.getAttribute('data-idx'));
-        if (btn.classList.contains('cart-qty-btn')) {
-          const action = btn.getAttribute('data-action');
-          if (action === 'increase') {
+        const idx = parseInt(btn.getAttribute("data-idx"));
+        if (btn.classList.contains("cart-qty-btn")) {
+          const action = btn.getAttribute("data-action");
+          if (action === "increase") {
             cart[idx].qty++;
-          } else if (action === 'decrease') {
+          } else if (action === "decrease") {
             cart[idx].qty--;
-            if (cart[idx].qty <= 0) cart.splice(idx,1);
+            if (cart[idx].qty <= 0) cart.splice(idx, 1);
           }
           updateCartUI();
         }
-        if (btn.classList.contains('cart-item-remove')) {
+        if (btn.classList.contains("cart-item-remove")) {
           cart.splice(idx, 1);
           updateCartUI();
         }
       });
-      
+
       // ---- Checkout Button Event (with confirmation, clears coupon) ----
-      checkoutBtn.addEventListener('click', function() {
+      checkoutBtn.addEventListener("click", function () {
         if (cart.length === 0) {
           alert("Your cart is already empty.");
           return;
@@ -620,27 +767,27 @@
           cart.length = 0;
           appliedCoupon = null;
           couponDiscount = 0;
-          if(couponInput) couponInput.value = "";
-          if(couponMsg) couponMsg.textContent = "";
+          if (couponInput) couponInput.value = "";
+          if (couponMsg) couponMsg.textContent = "";
           updateCartUI();
           alert("Thank you for your purchase! Your cart has been cleared.");
           closeCartModal();
         }
       });
-      
+
       // ---- Initial UI ----
       updateCartUI();
-    
-      function copyToClipboard(code) {
-        navigator.clipboard.writeText(code).then(function() {
-          alert(`Code "${code}" copied to clipboard!`);
-        }, function(err) {
-          console.error('Could not copy text: ', err);
-        });
-      }
-    
-    
-    </script>
 
+      function copyToClipboard(code) {
+        navigator.clipboard.writeText(code).then(
+          function () {
+            alert(`Code "${code}" copied to clipboard!`);
+          },
+          function (err) {
+            console.error("Could not copy text: ", err);
+          }
+        );
+      }
+    </script>
   </body>
 </html>
