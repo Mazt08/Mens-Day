@@ -23,61 +23,169 @@
       <div class="main-header text-center my-3">
         <h1>Men’s Day</h1>
       </div>
-  
       <nav class="navbar navbar-expand-lg">
         <div class="container d-flex justify-content-between align-items-center">
-          <!-- Left: Menu -->
-          <div class="d-flex align-items-center gap-4">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Stories</a>
-          </div>
+        <!-- Left: Menu -->
+        <div class="d-flex align-items-center gap-4 ms-0 ">
+          <a
+            class="nav-link"
+            href="../Landing Page/Landing Page Men's Day.html"
+          >
+            Home
+          </a>
+          <a class="nav-link" href="../About Us Page/About us.html">
+            About
+          </a>
+          <a class="nav-link active" href="../subTops/Tops Sub-Categories.html">
+            Products
+          </a>
+        </div>
   
-          <!-- Right: Icons -->
-          <div class="d-flex align-items-center gap-4">
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
-                width="24"
-                alt="Search"
-            /></a>
-            <a href="../Login Page/login.html"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
-                width="24"
-                alt="Profile"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
-                width="24"
-                alt="Cart"
-            /></a>
-          </div>
+        <!-- Spacer -->
+        <div class="flex-grow-1"></div>
+  
+        <!-- Right: Icons -->
+        <div class="ms-0 d-flex align-items-center gap-4">
+          <a href="#">
+            <img
+          src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+          width="24"
+          alt="Search"
+            />
+          </a>
+          <a href="../Login Page/login.html">
+            <img
+          src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
+          width="24"
+          alt="Profile"
+            />
+          </a>
+          <a href="#" id="cartIcon">
+            <img
+          src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+          width="24"
+          alt="Cart"
+            />
+          </a>
         </div>
       </nav>
   
       <div class="category-bar">
         <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../subTops/Tops Sub-Categories.html">Tops</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../subFootwear/Footwear Sub-Categories.html">Footwear</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../subAccessories/Accessories Sub-Categories.html">Accessories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="#">Sale</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="../subTops/Tops Sub-Categories.html">
+          Tops
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../subBottoms/Bottoms Sub-Categories.html">
+          Bottoms
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../subOutwear/Outerwear Sub-Categories.html">
+          Outerwear
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../subFootwear/Footwear Sub-Categories.html">
+          Footwear
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+          class="nav-link"
+          href="../subAccessories/Accessories Sub-Categories.html"
+          >
+          Accessories
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+          class="nav-link"
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#discountModal"
+          >
+          Discounts
+          </a>
+        </li>
         </ul>
+      </div>
+  
+      <!-- Discount Modal -->
+      <div
+        class="modal fade"
+        id="discountModal"
+        tabindex="-1"
+        aria-labelledby="discountModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+        <div class="modal-content shadow-lg rounded-4">
+          <div class="modal-header bg-dark text-white rounded-top-4">
+          <h5 class="modal-title" id="discountModalLabel">
+            🎉 Exclusive Discounts
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          </div>
+          <div class="modal-body p-4" style="background-color: #f8f9fa">
+          <p class="mb-4" style="font-size: 1.1em; color: #333">
+            Check out our latest deals and coupons to save on your favorite
+            outfits!
+          </p>
+          <ul class="list-group">
+            <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+            >
+            <span style="color: #212529">
+              10% off with code <strong>DISCOUNT10</strong>
+            </span>
+            <button
+              class="btn btn-sm"
+              style="background-color: black; color: white"
+              onclick="copyToClipboard('DISCOUNT10')"
+            >
+              Copy Code
+            </button>
+            </li>
+            <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm"
+            >
+            <span style="color: #212529">
+              20% off with code <strong>DISCOUNT20</strong>
+            </span>
+            <button
+              class="btn btn-sm"
+              style="background-color: black; color: white"
+              onclick="copyToClipboard('DISCOUNT20')"
+            >
+              Copy Code
+            </button>
+            </li>
+            <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm"
+            >
+            <span style="color: #212529">
+              30% off with code <strong>DISCOUNT30</strong>
+            </span>
+            <button
+              class="btn btn-sm"
+              style="background-color: black; color: white"
+              onclick="copyToClipboard('DISCOUNT30')"
+            >
+              Copy Code
+            </button>
+            </li>
+          </ul>
+          </div>
+        </div>
+        </div>
       </div>
         
     <section class="product-details-section">
@@ -87,23 +195,23 @@
                 <div class="col-md-6">
                     <div class="row g-2">
                         <div class="col-6">
-                            <img src="top1.avif" class="img-fluid" alt="Product Image 1">
+                            <img src="hoodie1.jpg" class="img-fluid" alt="Product Image 1">
                         </div>
                         <div class="col-6">
-                            <img src="top2.avif" class="img-fluid" alt="Product Image 2">
+                            <img src="hoodie2.jpg" class="img-fluid" alt="Product Image 2">
                         </div>
                         <div class="col-6">
-                            <img src="top3.avif" class="img-fluid" alt="Product Image 3">
+                            <img src="hoodie3.jpg" class="img-fluid" alt="Product Image 3">
                         </div>
                         <div class="col-6">
-                            <img src="top 4.avif" class="img-fluid" alt="Product Image 4">
-                        </div>
+                            <img src="hoodie4.jpg" class="img-fluid" alt="Product Image 4">
+                        </div> 
                     </div>
                 </div>
 
                 <!-- Second Column: Product Details -->
                 <div class="col-md-6">
-                    <h4>100% merino wool cardigan</h4>
+                    <h4>Multi-Color Hoodie</h4>
                     <p class="price"></p>
                         <span class="text-muted text-decoration-line-through">Php 3,995</span>
                         <span class="current-price fw-bold">Php 2,995</span>
@@ -141,10 +249,9 @@
                     <div class="product-description mt-4">
                         <h5>Description</h5>
                         <p>
-                            ESSENTIALS: Made to last. Regular fit. 100% wool fabric. Fine-knit fabric. V-neck. Button up.<br>
-                            Cable knit finish. The model is 185 cm tall and is wearing a size M. 100% merino wool. Medium-knit fabric.<br> 
-                            Long sleeves with elastic cuffs. The model is 187 cm tall and is wearing a size M.<br> 
-                            Front closure with buttons. Untrimmed hem.
+                          Constructed from high-quality cotton fleece, this hoodie offers a perfect combination of comfort,<br>
+                           strength, and timeless style. Its reinforced seams and classic design make it a dependable<br>
+                            choice for everyday wear.
                         </p>
                     </div>
 
