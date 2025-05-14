@@ -19,7 +19,7 @@
     </div>
 
     <div class="main-header text-center my-3">
-      <h1>Men’s Day</h1>
+      <h1>Men's Day</h1>
     </div>
 
         <nav class="navbar navbar-expand-lg">
@@ -437,6 +437,73 @@
     document.body.style.overflow = 'hidden';
   });
   
+  // ---- Buy Now Logic ----
+  document.body.addEventListener('click', function(e) {
+    const btn = e.target.closest('.btn-buy-now');
+    if (!btn) return;
+    e.preventDefault();
+  
+    let productBox = btn.closest('.product-box');
+    if (!productBox) return;
+  
+    let name = productBox.getAttribute('data-name');
+    let color = productBox.getAttribute('data-color');
+    let image = productBox.getAttribute('data-image');
+    let price = productBox.getAttribute('data-price');
+  
+    if (!name) name = productBox.querySelector('h6')?.textContent.trim() || '';
+    if (!color) color = productBox.querySelector('.text-muted')?.textContent.trim() || '';
+    if (!image) image = productBox.querySelector('img')?.getAttribute('src') || '';
+    if (!price) {
+      let priceText = productBox.querySelector('.d-flex h6:last-child')?.textContent.replace(/[^0-9.]+/g, '');
+      price = priceText || '0';
+    }
+  
+    price = parseFloat(price);
+  
+    // Create a single-item cart for the Buy Now action
+    const buyNowItem = {
+      name,
+      color,
+      image,
+      price,
+      qty: 1
+    };
+    
+    // Show confirmation dialog
+    if (confirm(`Buy ${name} (${color}) for $${price} now?`)) {
+      // Prepare data for the transaction
+      const transactionData = {
+        cart: [buyNowItem],
+        coupon_applied: '',
+        total_price: price
+      };
+      
+      // Send data to server
+      fetch('save_transaction.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(transactionData)
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        alert('Purchase successful! Your order has been placed.');
+        console.log('Transaction saved:', data);
+      })
+      .catch(error => {
+        console.error('Error saving transaction:', error);
+        alert('There was an error processing your purchase. Please try again.');
+      });
+    }
+  });
+  
   // ---- Cart UI Update ----
   function updateCartUI() {
     cartItemsList.innerHTML = '';
@@ -545,14 +612,47 @@
       return;
     }
     if (window.confirm("Are you sure you want to checkout?")) {
-      cart.length = 0;
-      appliedCoupon = null;
-      couponDiscount = 0;
-      if(couponInput) couponInput.value = "";
-      if(couponMsg) couponMsg.textContent = "";
-      updateCartUI();
-      alert("Thank you for your purchase! Your cart has been cleared.");
-      closeCartModal();
+      // Prepare data for the transaction
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const discount = subtotal * couponDiscount / 100;
+      const total = subtotal - discount;
+      
+      const transactionData = {
+        cart: cart,
+        coupon_applied: appliedCoupon || '',
+        total_price: total
+      };
+      
+      // Send data to server
+      fetch('save_transaction.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(transactionData)
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        // Clear cart only after successful submission
+        cart.length = 0;
+        appliedCoupon = null;
+        couponDiscount = 0;
+        if(couponInput) couponInput.value = "";
+        if(couponMsg) couponMsg.textContent = "";
+        updateCartUI();
+        alert("Thank you for your purchase! Your order has been placed.");
+        closeCartModal();
+        console.log('Transaction saved:', data);
+      })
+      .catch(error => {
+        console.error('Error saving transaction:', error);
+        alert('There was an error processing your order. Please try again.');
+      });
     }
   });
   
@@ -566,7 +666,6 @@
       console.error('Could not copy text: ', err);
     });
   }
-
 
 </script>
     

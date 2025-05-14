@@ -1,8 +1,15 @@
 <?php
+// ✅ Enforce POST request only
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo "Method Not Allowed";
+    exit;
+}
+
 $host = '127.0.0.1';
 $user = 'root';
 $pass = '';
-$db   = 'product';
+$db = 'product';
 
 // Database Connection
 $conn = new mysqli($host, $user, $pass, $db);
