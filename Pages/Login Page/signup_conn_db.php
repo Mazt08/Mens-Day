@@ -26,7 +26,7 @@
     $stmt-> bind_param("sss", $username, $email, $password);
 
     if ($stmt->execute()) {
-        header("Location: login.html");
+        header("Location: login.php");
         exit();
     } else {
         // Error during registration

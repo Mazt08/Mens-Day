@@ -1,4 +1,4 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"> 
   <head>
     <meta charset="UTF-8" />
@@ -45,40 +45,35 @@ S<!DOCTYPE html>
           <h2 class="fw-bold text-white mb-2">EXISTING MEMBER</h2>
           <p class="text-white-50 mb-4">Welcome Back!</p>
 
-          <form class="w-100">
-            <div class="input-group mb-3">
-              <span class="input-group-text bg-transparent border-0">
-                <i class="bi bi-person text-white-50"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control bg-transparent text-white border-0 border-bottom"
-                placeholder="Enter Username"
-              />
-            </div>
-            <div class="input-group mb-4">
-              <span class="input-group-text bg-transparent border-0">
-                <i class="bi bi-lock text-white-50"></i>
-              </span>
-              <input
-                type="password"
-                class="form-control bg-transparent text-white border-0 border-bottom"
-                placeholder="Enter Password"
-                id="password1"
-              />
-              <span class="input-group-text bg-transparent border-0">
-                <i class="bi bi-eye-slash text-white-50" id="togglePassword1" style="cursor: pointer;"></i>
-              </span>
-            </div>
-
-            <a href="../Landing Page/Landing Page Men's Day.html">
-              <button
-                type="submit"
-                class="btn btn-light rounded-pill px-5 py-2 mb-3"
-              >
-                Continue <i class="bi bi-arrow-right"></i>
-              </button>
-            </a>
+<form action="login.php" method="post">
+  <div class="input-group mb-3">
+    <span class="input-group-text bg-transparent border-0">
+      <i class="bi bi-person text-white-50"></i>
+    </span>
+    <input
+      type="text"
+      class="form-control bg-transparent text-white border-0 border-bottom"
+      placeholder="Enter Username"
+      name="username"
+      required
+    />
+  </div>
+  <div class="input-group mb-4">
+    <span class="input-group-text bg-transparent border-0">
+      <i class="bi bi-lock text-white-50"></i>
+    </span>
+    <input
+      type="password"
+      class="form-control bg-transparent text-white border-0 border-bottom"
+      placeholder="Enter Password"
+      name="password"
+      required
+    />
+  </div>
+  <button type="submit" class="btn btn-light rounded-pill px-5 py-2 mb-3">
+    Continue <i class="bi bi-arrow-right"></i>
+  </button>
+</form>
             
 
             <div class="text-white-50 mb-3">OR</div>
@@ -97,7 +92,7 @@ S<!DOCTYPE html>
 
             <div class="text-white-50">
               Don't have account?
-              <a href="signin.html" class="text-white fw-bold">Register Now</a>
+              <a href="signup.php" class="text-white fw-bold">Register Now</a>
             </div>
           </form>
         </div>

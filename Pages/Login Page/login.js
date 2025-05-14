@@ -1,60 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
-  const usernameInput = document.querySelector('input[type="text"]');
-  const passwordInput = document.querySelector('input[type="password"]');
 
-
-  // Validate form on submit
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default submission
+    event.preventDefault(); // Prevent default form submission
 
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
+    // Get form data
+    const formData = new FormData(form);
+    const username = formData.get("username");
+    const password = formData.get("password");
 
-    if (username === "" || password === "") {
+    // Validate inputs
+    if (!username || !password) {
       alert("❗ Please fill in both username and password.");
-    } else {
-      // Dummy success (normally you will check this on a server)
-      alert("✅ Welcome back, " + username + "!");
-      form.reset(); // Clear form
+      return;
     }
-  });
 
-  // Smooth animation for login form
-  const loginForm = document.querySelector(".login-form");
-  loginForm.style.opacity = "0";
-  loginForm.style.transform = "translateY(30px)";
-  setTimeout(() => {
-    loginForm.style.transition = "all 0.6s ease";
-    loginForm.style.opacity = "1";
-    loginForm.style.transform = "translateY(0)";
-  }, 100);
+    // Send login request to the server
+    fetch("login_conn_db.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === "success") {
+          alert(`✅ ${data.message}`);
+          window.location.href = "../Landing Page/Landing Page Men's Day.html";
+        } else {
+          alert(`❗ ${data.message}`);
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("❗ An error occurred. Please try again later.");
+      });
+
+    // Smooth animation for login form
+    const loginForm = document.querySelector(".login-form");
+    loginForm.style.opacity = "0";
+    loginForm.style.transform = "translateY(30px)";
+    setTimeout(() => {
+      loginForm.style.transition = "all 0.6s ease";
+      loginForm.style.opacity = "1";
+      loginForm.style.transform = "translateY(0)";
+    }, 100);
+  });
 });
-        document.getElementById('togglePassword1').addEventListener('click', function () {
-          const passwordField = document.getElementById('password1');
-          const icon = this;
-          if (passwordField.type === 'password') {
-            passwordField.type = 'text';
-            icon.classList.remove('bi-eye-slash');
-            icon.classList.add('bi-eye');
-          } else {
-            passwordField.type = 'password';
-            icon.classList.remove('bi-eye');
-            icon.classList.add('bi-eye-slash');
-          }
-        });
-      
-        // Toggle password visibility for the second input
-        document.getElementById('togglePassword2').addEventListener('click', function () {
-          const passwordField = document.getElementById('password2');
-          const icon = this;
-          if (passwordField.type === 'password') {
-            passwordField.type = 'text';
-            icon.classList.remove('bi-eye-slash');
-            icon.classList.add('bi-eye');
-          } else {
-            passwordField.type = 'password';
-            icon.classList.remove('bi-eye');
-            icon.classList.add('bi-eye-slash');
-          }
-        });
