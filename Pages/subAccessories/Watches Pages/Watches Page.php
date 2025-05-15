@@ -1,357 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Men's Day</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="Watches styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-    <div class="top-bar d-flex justify-content-center align-items-center">
-      <p class="m-0">
-        Get early access on launches and offers.
-        <a href="#">Sign Up For Texts →</a>
-      </p>
-    </div>
 
-    <div class="main-header text-center my-3">
-      <h1>Men’s Day</h1>
-    </div>
-
-        <nav class="navbar navbar-expand-lg">
-          <div class="container d-flex justify-content-between align-items-center">
-            <!-- Left: Menu -->
-            <div class="d-flex align-items-center gap-4">
-              <a class="nav-link active" href="../../Landing Page/Landing Page Men's Day.html">Home</a>
-              <a class="nav-link" href="../../About Us Page/About us.html">About</a>
-              <a class="nav-link" href="#">Stories</a>
-            </div>
-    
-            <div class="d-flex align-items-center gap-4">
-              <a href="../../Search Page/search.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="24" alt="Search"/>
-              </a>
-              <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="24" alt="Profile"/>
-              </a>
-              <a href="..//..//Cart Page/cart.html" id="cartIcon">
-                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24" alt="Cart"/>
-              </a>
-            </div>
-          </div>
-        </nav>
-
-    <div class="category-bar">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="../../subTops/Tops Sub-Categories.html">Tops</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.html">Footwear</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.html"style="text-decoration: underline;">Accessories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#discountModal">Discounts</a>
-        </li>        
-      </ul>
-    </div>
-
-    <!-- Discount Modal -->
-    <div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content shadow-lg rounded-4">
-          <div class="modal-header bg-dark text-white rounded-top-4">
-            <h5 class="modal-title" id="discountModalLabel">🎉 Exclusive Discounts</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-4" style="background-color: #f8f9fa;">
-            <p class="mb-4" style="font-size: 1.1em; color: #333;">Check out our latest deals and coupons to save on your favorite outfits!</p>
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
-                <span style="color: #212529;">10% off with code <strong>DISCOUNT10</strong></span>
-                <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT10')">Copy Code</button>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
-                <span style="color: #212529;">20% off with code <strong>DISCOUNT20</strong></span>
-                <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT20')">Copy Code</button>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm">
-                <span style="color: #212529;">30% off with code <strong>DISCOUNT30</strong></span>
-                <button class="btn btn-sm" style="background-color: black; color: white;" onclick="copyToClipboard('DISCOUNT30')">Copy Code</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>    
-
-    <div class="content">
-      <div class="header d-flex flex-column">
-        <h6>Products</h6>
-        <h2 style="font-weight: bold;">Watches</h2>
-        <h4>Featured</h4>
-      </div>
-
-      <div class="products">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="SEIKO Mechanical Watch"
-              data-color="Silver & Gold"
-              data-image="watch1.jpg"
-              data-price="445">
-              <div class="image-container">
-                <img src="watch1.jpg" alt="Image1" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>SEIKO Mechanical Watch</h6>
-                    <p class="text-muted">Silver & Gold</p>
-                  </div>
-                  <h6>$445</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="CITIZEN Quartz Watch"
-              data-color="Silver & Black"
-              data-image="watch2.jpg"
-              data-price="340">
-              <div class="image-container">
-                <img src="watch2.jpg" alt="Image2" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>CITIZEN Quartz Watch</h6>
-                    <p class="text-muted">Silver & Black</p>
-                  </div>
-                  <h6>$340</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="YUINK Digital Watch"
-              data-color="Black"
-              data-image="watch3.jpg"
-              data-price="54">
-              <div class="image-container">
-                <img src="watch3.jpg" alt="Image3" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>YUINK Digital Watch</h6>
-                    <p class="text-muted">Black</p>
-                  </div>
-                  <h6>$54</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Second row -->
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="SAMSUNG Smart Watch"
-              data-color="Green"
-              data-image="watch4.avif"
-              data-price="320">
-              <div class="image-container">
-                <img src="watch4.avif" alt="Image4" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>SAMSUNG Smart Watch</h6>
-                    <p class="text-muted">Green</p>
-                  </div>
-                  <h6>$320</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="TIMEWEAR Analog Watch"
-              data-color="Brown & Silver"
-              data-image="watch5.jpg"
-              data-price="530">
-              <div class="image-container">
-                <img src="watch5.jpg" alt="Image5" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>TIMEWEAR Analog Watch</h6>
-                    <p class="text-muted">Brown & Silver</p>
-                  </div>
-                  <h6>$530</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-box"
-              data-name="GALLANT Dress Watch"
-              data-color="Blue"
-              data-image="watch6.jpg"
-              data-price="90">
-              <div class="image-container">
-                <img src="watch6.jpg" alt="Image6" class="img-fluid" />
-              </div>
-              <div class="product-details">
-                <div class="d-flex justify-content-between align-items-center" style="display:flex;justify-content:space-between;align-items:center;">
-                  <div>
-                    <h6>GALLANT Dress Watch</h6>
-                    <p class="text-muted">Blue</p>
-                  </div>
-                  <h6>$90</h6>
-                </div>
-                <div class="button-group mt-3">
-                  <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
-                  <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-<!-- Cart Modal -->
-<div class="cart-modal-overlay" id="cartModalOverlay">
-  <aside class="cart-modal" id="cartModal" tabindex="-1" aria-modal="true">
-    <div class="cart-modal-header">
-      <div class="cart-modal-title">Your Cart</div>
-      <button class="cart-modal-close" id="cartModalClose" aria-label="Close">&times;</button>
-    </div>
-    <div class="cart-items-list" id="cartItemsList"></div>
-    <div class="cart-modal-footer">
-      <div class="cart-coupon-row" style="display:flex;gap:8px;margin-bottom:15px;">
-        <input type="text" id="cartCouponInput" class="form-control" placeholder="Enter coupon code" style="flex:1;">
-        <button id="applyCouponBtn" class="btn" type="button" style="background-color: black; color: white;">Apply Coupon</button>
-      </div>
-      <div id="cartCouponMsg" style="min-height:22px;font-size:0.95em;color:#2d7a2d;margin-bottom:10px;"></div>
-      <div class="cart-subtotal-row">
-        <span id="cartSubtotalLabel">Subtotal (0 items)</span>
-        <span id="cartSubtotalAmount">$0</span>
-      </div>
-      <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
-      <div class="cart-footer-note">Psst, get it now before it sells out.</div>
-    </div>
-  </aside>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Men's Day</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Watches styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<div class="top-bar d-flex justify-content-center align-items-center">
+  <p class="m-0">
+    Get early access on launches and offers.
+    <a href="#">Sign Up For Texts →</a>
+  </p>
 </div>
-    
+
+<div class="main-header text-center my-3">
+  <h1>Men’s Day</h1>
+</div>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Left: Menu -->
+    <div class="d-flex align-items-center gap-4">
+      <a class="nav-link active" href="../../Landing Page/Landing Page Men's Day.php">Home</a>
+      <a class="nav-link" href="../../About Us Page/About us.php">About</a>
+      <a class="nav-link" href="#">Stories</a>
     </div>
+
+    <div class="d-flex align-items-center gap-4">
+      <a href="../../Search Page/search.php">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="24" alt="Search" />
+      </a>
+      <a href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="24" alt="Profile" />
+      </a>
+      <a href="#" id="cartIcon">
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24" alt="Cart" />
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="category-bar">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="../../subTops/Tops Sub-Categories.php">Tops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.php">Bottoms</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../../subOutwear/Outerwear Sub-Categories.php">Outerwear</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.php">Footwear</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.php"
+        style="text-decoration: underline;">Accessories</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#discountModal">Discounts</a>
+    </li>
+  </ul>
+</div>
+
+<!-- Discount Modal -->
+<div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content shadow-lg rounded-4">
+      <div class="modal-header bg-dark text-white rounded-top-4">
+        <h5 class="modal-title" id="discountModalLabel">🎉 Exclusive Discounts</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4" style="background-color: #f8f9fa;">
+        <p class="mb-4" style="font-size: 1.1em; color: #333;">Check out our latest deals and coupons to save on your
+          favorite outfits!</p>
+        <ul class="list-group">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
+            <span style="color: #212529;">10% off with code <strong>DISCOUNT10</strong></span>
+            <button class="btn btn-sm" style="background-color: black; color: white;"
+              onclick="copyToClipboard('DISCOUNT10')">Copy Code</button>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 mb-2 rounded shadow-sm">
+            <span style="color: #212529;">20% off with code <strong>DISCOUNT20</strong></span>
+            <button class="btn btn-sm" style="background-color: black; color: white;"
+              onclick="copyToClipboard('DISCOUNT20')">Copy Code</button>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center bg-white border-0 rounded shadow-sm">
+            <span style="color: #212529;">30% off with code <strong>DISCOUNT30</strong></span>
+            <button class="btn btn-sm" style="background-color: black; color: white;"
+              onclick="copyToClipboard('DISCOUNT30')">Copy Code</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="header d-flex flex-column">
+    <h6>Products</h6>
+    <h2 style="font-weight: bold;">Watches</h2>
+    <h4>Featured</h4>
+  </div>
+
+  <div class="products">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-box" data-name="SEIKO Mechanical Watch" data-color="Silver & Gold" data-image="watch1.jpg"
+          data-price="445">
+          <div class="image-container">
+            <img src="watch1.jpg" alt="Image1" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>SEIKO Mechanical Watch</h6>
+                <p class="text-muted">Silver & Gold</p>
+              </div>
+              <h6>$445</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box" data-name="CITIZEN Quartz Watch" data-color="Silver & Black" data-image="watch2.jpg"
+          data-price="340">
+          <div class="image-container">
+            <img src="watch2.jpg" alt="Image2" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>CITIZEN Quartz Watch</h6>
+                <p class="text-muted">Silver & Black</p>
+              </div>
+              <h6>$340</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box" data-name="YUINK Digital Watch" data-color="Black" data-image="watch3.jpg"
+          data-price="54">
+          <div class="image-container">
+            <img src="watch3.jpg" alt="Image3" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>YUINK Digital Watch</h6>
+                <p class="text-muted">Black</p>
+              </div>
+              <h6>$54</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second row -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="product-box" data-name="SAMSUNG Smart Watch" data-color="Green" data-image="watch4.avif"
+          data-price="320">
+          <div class="image-container">
+            <img src="watch4.avif" alt="Image4" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>SAMSUNG Smart Watch</h6>
+                <p class="text-muted">Green</p>
+              </div>
+              <h6>$320</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box" data-name="TIMEWEAR Analog Watch" data-color="Brown & Silver" data-image="watch5.jpg"
+          data-price="530">
+          <div class="image-container">
+            <img src="watch5.jpg" alt="Image5" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>TIMEWEAR Analog Watch</h6>
+                <p class="text-muted">Brown & Silver</p>
+              </div>
+              <h6>$530</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box" data-name="GALLANT Dress Watch" data-color="Blue" data-image="watch6.jpg"
+          data-price="90">
+          <div class="image-container">
+            <img src="watch6.jpg" alt="Image6" class="img-fluid" />
+          </div>
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center"
+              style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <h6>GALLANT Dress Watch</h6>
+                <p class="text-muted">Blue</p>
+              </div>
+              <h6>$90</h6>
+            </div>
+            <div class="button-group mt-3">
+              <button class="btn btn-add-to-cart btn-sm w-100 mb-2">Add to Cart</button>
+              <button class="btn btn-buy-now btn-sm w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal-overlay" id="cartModalOverlay">
+    <aside class="cart-modal" id="cartModal" tabindex="-1" aria-modal="true">
+      <div class="cart-modal-header">
+        <div class="cart-modal-title">Your Cart</div>
+        <button class="cart-modal-close" id="cartModalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="cart-items-list" id="cartItemsList"></div>
+      <div class="cart-modal-footer">
+        <div class="cart-coupon-row" style="display:flex;gap:8px;margin-bottom:15px;">
+          <input type="text" id="cartCouponInput" class="form-control" placeholder="Enter coupon code" style="flex:1;">
+          <button id="applyCouponBtn" class="btn" type="button" style="background-color: black; color: white;">Apply
+            Coupon</button>
+        </div>
+        <div id="cartCouponMsg" style="min-height:22px;font-size:0.95em;color:#2d7a2d;margin-bottom:10px;"></div>
+        <div class="cart-subtotal-row">
+          <span id="cartSubtotalLabel">Subtotal (0 items)</span>
+          <span id="cartSubtotalAmount">$0</span>
+        </div>
+        <button class="cart-checkout-btn">CONTINUE TO CHECKOUT</button>
+        <div class="cart-footer-note">Psst, get it now before it sells out.</div>
+      </div>
+    </aside>
+  </div>
+
+</div>
 
 <footer class="footer py-5">
-    <div class="container">
-      <div class="row justify-content-between align-items-start">
-        <!-- Account -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Acount</div>
-          <a href="#">Log In</a>
-          <a href="#">Sign Up</a>
-          <a href="#">Redeem a Gift Card</a>
-        </div>
-        <!-- Company -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Company</div>
-          <a href="#">About</a>
-          <a href="#">Environmental Initiatives</a>
-          <a href="#">Factories</a>
-          <a href="#">DEI</a>
-          <a href="#">Careers</a>
-          <a href="#">International</a>
-          <a href="#">Accessibility</a>
-        </div>
-        <!-- Get Help -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Get Help</div>
-          <a href="#">Help Center</a>
-          <a href="#">Return Policy</a>
-          <a href="#">Shipping Info</a>
-          <a href="#">Bulk Orders</a>
-        </div>
-        <!-- Connect -->
-        <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
-          <div class="footer-title">Connect</div>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">Affiliates</a>
-          <a href="#">Out Stores</a>
-        </div>
-        <!-- Newsletter -->
-        <div class="col-12 col-lg-4">
-          <form>
-            <div class="input-group mt-2 mt-lg-0">
-              <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
-              <button class="input-group-text" type="submit" aria-label="Subscribe">
-                &#8594;
-              </button>
-            </div>
-          </form>
-        </div>
+  <div class="container">
+    <div class="row justify-content-between align-items-start">
+      <!-- Account -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+        <div class="footer-title">Acount</div>
+        <a href="#">Log In</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Redeem a Gift Card</a>
       </div>
-      <!-- Bottom links -->
-      <div class="footer-bottom mt-4">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Do Not Sell or Share My Personal Information</a>
-        <a href="#">CS Supply Chain Transparency</a>
-        <a href="#">Vendor Code of Conduct</a>
-        <a href="#">Sitemap Pages</a>
-        <a href="#">Sitemap Products</a>
+      <!-- Company -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+        <div class="footer-title">Company</div>
+        <a href="#">About</a>
+        <a href="#">Environmental Initiatives</a>
+        <a href="#">Factories</a>
+        <a href="#">DEI</a>
+        <a href="#">Careers</a>
+        <a href="#">International</a>
+        <a href="#">Accessibility</a>
       </div>
-      <div class="footer-copyright">
-        &copy; 2023 All Rights Reserved
+      <!-- Get Help -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+        <div class="footer-title">Get Help</div>
+        <a href="#">Help Center</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Bulk Orders</a>
+      </div>
+      <!-- Connect -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+        <div class="footer-title">Connect</div>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Affiliates</a>
+        <a href="#">Out Stores</a>
+      </div>
+      <!-- Newsletter -->
+      <div class="col-12 col-lg-4">
+        <form>
+          <div class="input-group mt-2 mt-lg-0">
+            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
+            <button class="input-group-text" type="submit" aria-label="Subscribe">
+              &#8594;
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-  </footer>
+    <!-- Bottom links -->
+    <div class="footer-bottom mt-4">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Do Not Sell or Share My Personal Information</a>
+      <a href="#">CS Supply Chain Transparency</a>
+      <a href="#">Vendor Code of Conduct</a>
+      <a href="#">Sitemap Pages</a>
+      <a href="#">Sitemap Products</a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2023 All Rights Reserved
+    </div>
+  </div>
+</footer>
 
-  <script>
+<script>
   // ---- Cart State ----
   const cart = [];
-  
+
   // ---- Coupon State ----
   let appliedCoupon = null;
   let couponDiscount = 0;
@@ -360,7 +355,7 @@
     "DISCOUNT20": 20,
     "DISCOUNT30": 30
   };
-  
+
   // ---- DOM Elements ----
   const cartIcon = document.getElementById('cartIcon');
   const cartModalOverlay = document.getElementById('cartModalOverlay');
@@ -370,14 +365,14 @@
   const cartSubtotalAmount = document.getElementById('cartSubtotalAmount');
   const cartSubtotalLabel = document.getElementById('cartSubtotalLabel');
   const checkoutBtn = document.querySelector('.cart-checkout-btn');
-  
+
   // ---- Coupon DOM ----
   const couponInput = document.getElementById('cartCouponInput');
   const applyCouponBtn = document.getElementById('applyCouponBtn');
   const couponMsg = document.getElementById('cartCouponMsg');
-  
+
   // ---- Modal Open/Close ----
-  cartIcon?.addEventListener('click', function(e) {
+  cartIcon?.addEventListener('click', function (e) {
     e.preventDefault();
     cartModalOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -387,27 +382,27 @@
     document.body.style.overflow = '';
   }
   cartModalClose?.addEventListener('click', closeCartModal);
-  cartModalOverlay.addEventListener('click', function(e){
-    if(e.target === cartModalOverlay) closeCartModal();
+  cartModalOverlay.addEventListener('click', function (e) {
+    if (e.target === cartModalOverlay) closeCartModal();
   });
-  document.addEventListener('keydown', function(e) {
-    if(e.key === "Escape") closeCartModal();
+  document.addEventListener('keydown', function (e) {
+    if (e.key === "Escape") closeCartModal();
   });
-  
+
   // ---- Add to Cart Logic ----
-  document.body.addEventListener('click', function(e) {
+  document.body.addEventListener('click', function (e) {
     const btn = e.target.closest('.btn-add-to-cart');
     if (!btn) return;
     e.preventDefault();
-  
+
     let productBox = btn.closest('.product-box');
     if (!productBox) return;
-  
+
     let name = productBox.getAttribute('data-name');
     let color = productBox.getAttribute('data-color');
     let image = productBox.getAttribute('data-image');
     let price = productBox.getAttribute('data-price');
-  
+
     if (!name) name = productBox.querySelector('h6')?.textContent.trim() || '';
     if (!color) color = productBox.querySelector('.text-muted')?.textContent.trim() || '';
     if (!image) image = productBox.querySelector('img')?.getAttribute('src') || '';
@@ -415,11 +410,11 @@
       let priceText = productBox.querySelector('.d-flex h6:last-child')?.textContent.replace(/[^0-9.]+/g, '');
       price = priceText || '0';
     }
-  
+
     price = parseFloat(price);
-  
+
     let item = cart.find(i => i.name === name && i.color === color);
-    if(item) {
+    if (item) {
       item.qty++;
     } else {
       cart.push({
@@ -434,8 +429,8 @@
     cartModalOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
   });
-  
-// ---- Buy Now Logic ----
+
+  // ---- Buy Now Logic ----
   document.body.addEventListener('click', function (e) {
     const btn = e.target.closest('.btn-buy-now');
     if (!btn) return;
@@ -664,6 +659,7 @@
 
 
 </script>
-    
-  </body>
+
+</body>
+
 </html>

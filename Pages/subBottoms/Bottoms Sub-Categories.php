@@ -28,9 +28,9 @@
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left: Menu -->
       <div class="d-flex align-items-center gap-4">
-        <a class="nav-link" href="/Pages/Landing Page/Landing Page Men's Day.html">Home</a>
-        <a class="nav-link" href="../About Us Page/About us.html">About</a>
-        <a class="nav-link active" href="../subTops/Tops Sub-Categories.html">Products</a>
+        <a class="nav-link" href="/Pages/Landing Page/Landing Page Men's Day.php">Home</a>
+        <a class="nav-link" href="../About Us Page/About us.php">About</a>
+        <a class="nav-link active" href="../subTops/Tops Sub-Categories.php">Products</a>
       </div>
 
       <!-- Right: Icons -->
@@ -47,17 +47,17 @@
   <div class="category-bar">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="../subTops/Tops Sub-Categories.html">Tops</a>
+        <a class="nav-link" href="../subTops/Tops Sub-Categories.php">Tops</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="../subBottoms/Bottoms Sub-Categories.html"
+        <a class="nav-link active" href="../subBottoms/Bottoms Sub-Categories.php"
           style="text-decoration: underline">Bottoms</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
+        <a class="nav-link" href="../subOutwear/Outerwear Sub-Categories.php">Outerwear</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../subFootwear/Footwear Sub-Categories.html">Footwear</a>
+        <a class="nav-link" href="../subFootwear/Footwear Sub-Categories.php">Footwear</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../subAccessories/Accessories Sub-Categories.php">Accessories</a>
@@ -122,7 +122,7 @@
 
   <!-- Popular Tops Section -->
   <div class="container popular-tops my-5">
-    <h5>“Popular Tops”</h5>
+    <h5>“Popular Bottoms”</h5>
     <div class="row text-center mt-4">
       <div class="col">
         <a href="Jeans Products/Jeans page.php">

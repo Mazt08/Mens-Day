@@ -14,26 +14,17 @@
   <div class="main-header text-center my-3">
     <h1>Men’s Day</h1>
   </div>
+
   <nav class="navbar navbar-expand-lg">
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left: Menu -->
-      <div class="d-flex align-items-center gap-4 ms-0 ">
-        <a class="nav-link" href="../Landing Page/Landing Page Men's Day.html">
-          Home
-        </a>
-        <a class="nav-link" href="../About Us Page/About us.html">
-          About
-        </a>
-        <a class="nav-link active" href="../subTops/Tops Sub-Categories.html">
-          Products
-        </a>
+      <div class="d-flex align-items-center gap-4">
+        <a class="nav-link active" href="../../Landing Page/Landing Page Men's Day.php">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Stories</a>
       </div>
 
-      <!-- Spacer -->
-      <div class="flex-grow-1"></div>
-
-      <!-- Right: Icons -->
-      <div class="ms-0 d-flex align-items-center gap-4">
+      <div class="d-flex align-items-center gap-4">
         <a href="#">
           <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="24" alt="Search" />
         </a>
@@ -44,32 +35,33 @@
           <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="24" alt="Cart" />
         </a>
       </div>
+    </div>
   </nav>
 
   <div class="category-bar">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="../../subTops/Tops Sub-Categories.html">
+        <a class="nav-link" href="../../subTops/Tops Sub-Categories.php">
           Tops
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.html">
+        <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.php">
           Bottoms
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="../../subOutwear/Outerwear Sub-Categories.html">
+        <a class="nav-link active" href="../../subOutwear/Outerwear Sub-Categories.php">
           Outerwear
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.html">
+        <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.php">
           Footwear
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.html">
+        <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.php">
           Accessories
         </a>
       </li>

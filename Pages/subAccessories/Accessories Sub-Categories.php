@@ -28,9 +28,9 @@
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left: Menu -->
       <div class="d-flex align-items-center gap-4">
-        <a class="nav-link" href="/Pages/Landing Page/Landing Page Men's Day.html ">Home</a>
-        <a class="nav-link" href="../About Us Page/About us.html">About</a>
-        <a class="nav-link active" href="../subTops/Tops Sub-Categories.php">Products</a>
+        <a class="nav-link" href="../../Landing Page/Landing Page Men's Day.php">Home</a>
+        <a class="nav-link" href="../../About Us Page/About us.php">About</a>
+        <a class="nav-link active" href="../../subTops/Tops Sub-Categories.php">Products</a>
       </div>
 
       <!-- Right: Icons -->
@@ -59,8 +59,10 @@
         <a class="nav-link" href="../subFootwear/Footwear Sub-Categories.php">Footwear</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/Pages/subAccessories/Accessories Sub-Categories.php"
-          style="text-decoration: underline">Accessories</a>
+      <li class="nav-item">
+        <a class="nav-link active" href="../subAccessories/Accessories Sub-Categories.php"
+          style="text-decoration: underline">Accesories</a>
+      </li>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#discountModal">Discounts</a>

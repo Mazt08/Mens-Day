@@ -26,7 +26,7 @@
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left: Menu -->
       <div class="d-flex align-items-center gap-4">
-        <a class="nav-link active" href="/Pages/Landing Page/Landing Page Men's Day.html">Home</a>
+        <a class="nav-link active" href="../../Landing Page/Landing Page Men's Day.php">Home</a>
         <a class="nav-link" href="#">About</a>
         <a class="nav-link" href="#">Stories</a>
       </div>
@@ -51,19 +51,19 @@
   <div class="category-bar">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="../../subTops/Tops Sub-Categories.html">Tops</a>
+        <a class="nav-link" href="../../subTops/Tops Sub-Categories.php">Tops</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.html">Bottoms</a>
+        <a class="nav-link" href="../../subBottoms/Bottoms Sub-Categories.php">Bottoms</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subOutwear/Outerwear Sub-Categories.html">Outerwear</a>
+        <a class="nav-link" href="../../subOutwear/Outerwear Sub-Categories.php">Outerwear</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.html">Footwear</a>
+        <a class="nav-link" href="../../subFootwear/Footwear Sub-Categories.php">Footwear</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.html"
+        <a class="nav-link" href="../../subAccessories/Accessories Sub-Categories.php"
           style="text-decoration: underline;">Accessories</a>
       </li>
       <li class="nav-item">

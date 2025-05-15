@@ -28,8 +28,8 @@
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left: Menu -->
       <div class="d-flex align-items-center gap-4">
-        <a class="nav-link" href="../Landing Page/Landing Page Men's Day.html ">Home</a>
-        <a class="nav-link" href="../About Us Page/About us.html">About</a>
+        <a class="nav-link" href="../Landing Page/Landing Page Men's Day.php ">Home</a>
+        <a class="nav-link" href="../About Us Page/About us.php">About</a>
         <a class="nav-link active" href="../subTops/Tops Sub-Categories.php">Products</a>
       </div>
 
@@ -122,7 +122,7 @@
 
   <!-- Popular Tops Section -->
   <div class="container popular-tops my-5">
-    <h5>“Popular Tops”</h5>
+    <h5>“Popular Footwear”</h5>
     <div class="row text-center mt-4">
       <div class="col">
         <a href="Sneakers Products/Sneakers page.php">
