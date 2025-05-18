@@ -35,11 +35,15 @@ if ($stmt) {
 
     // Check if the user exists
     if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
         // User exists
+        $_SESSION['username'] = $row['username'];
+        $_SESSION['is_admin'] = ($row['username'] === 'admin');
         echo json_encode(['status' => 'success', 'message' => "Welcome back, $username!"]);
     } else {
         // User does not exist
         echo json_encode(['status' => 'error', 'message' => 'Invalid username or password. Please try again.']);
+        $_SESSION['is_admin'] = false;
     }
 
     // Close the statement

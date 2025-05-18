@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         if (data.status === "success") {
           alert(`✅ ${data.message}`);
-          window.location.href = "../Landing Page/Landing Page Men's Day.html";
+          window.location.href = "../Landing Page/Landing Page Men's Day.php";
         } else {
           alert(`❗ ${data.message}`);
         }

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -941,6 +945,11 @@
         <a class="nav-link active" href="../Landing Page/Landing Page Men's Day.php">Home</a>
         <a class="nav-link " href="../About Us Page/About us.php">About</a>
         <a class="nav-link" href="../subTops/Tops Sub-Categories.php">Products</a>
+        <?php
+            if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true) {
+                echo '<a class="nav-link" href="../Admin Page/account_management.php">Admin</a>'; // Assuming your admin page is in an 'admin' folder
+            }
+            ?>
       </div>
 
       <div class="d-flex align-items-center gap-4">
